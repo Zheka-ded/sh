@@ -261,7 +261,9 @@ table {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   position: absolute;
-  left: 0; }
+  padding: 6px 0px;
+  left: 0;
+  top: 0; }
 
 .hexagon {
   width: 60px;

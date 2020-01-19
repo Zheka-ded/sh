@@ -1,24 +1,35 @@
-h1{
-    color: red;
-}
 
-.block{
-    display: flex;
-}
 
 .header{
     display: flex;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 38px 0px;
+    position: relative;
 
     &__logo-link{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 35px;
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: 900;
         align-items: center;
         text-decoration: none;
+        font-family: 'Merriweather Sans', sans-serif;
+
     }
 
+}
+
+.logo__span{
+    position: absolute;
+    left: 100%;
+    font-size: 30px;
+    color: #fff;
+    padding-left: 15px;
 }
 
 .header__logo{
@@ -29,7 +40,7 @@ h1{
 .header__nav{
     display: flex;
     align-items: center;
-    background: rgb(187, 124, 124);
+    // // background: rgb(187, 124, 124);
 
     ul{
         display: flex;
@@ -41,6 +52,63 @@ h1{
     &-link{
         text-decoration: none;
         margin: 5px 10px;
+        text-transform: uppercase;
+        color: #fff;
     }
 
 }
+
+
+.header__nav ul li a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header__nav ul li a:hover::before{
+    width: 100%;
+}
+
+.header__nav ul li a::before{
+    content: attr(data-text);
+    border-bottom: 3px solid #ef4366;
+    color: #fff;
+    white-space: nowrap;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.4s;
+    position: absolute;
+    left: 0;
+}
+
+.hexagon {
+	width: 60px;
+	height: 35px;
+	background: #fc645f;
+	position: relative;
+}
+
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -15px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 15px solid #fc645f;
+}
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -15px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 15px solid #fc645f;
+}
+
+

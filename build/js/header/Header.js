@@ -1,25 +1,31 @@
 class Header {
-    constructor(siteName, logo, about, payment, contacts) {
-        this.siteName = siteName;
-        this.src = logo;
+    constructor(logoSite, logoName, about, payment, contacts) {
+    // constructor(siteName, logo, about, payment, contacts) {
+        this.logoSite = logoSite;
+        this.logoName = logoName
+        // this.src = logo;
         this.about = about;
         this.payment = payment;
         this.contacts = contacts;
     }
-    build (out) {
+    headerBuild (out) {
         // логотип
         let logoLink = document.createElement('a');
-        logoLink.classList.add('header__logo-link');
+        logoLink.classList.add('header__logo-link', 'hexagon');
         logoLink.setAttribute('href', 'index.html');
-        logoLink.textContent = this.siteName;
+        logoLink.textContent = this.logoSite;
         out.append(logoLink);
+        let logoSpan = document.createElement('span');
+        logoSpan.classList.add('logo__span');
+        logoSpan.textContent = this.logoName;
+        logoLink.append(logoSpan);
         // картинка логотипа
-        let logoPicture = document.createElement('img');
-        logoPicture.classList.add('header__logo');
-        logoPicture.setAttribute('src', this.src);
-        logoPicture.setAttribute('alt', 'Клоун');
-        // отрисовка логотипа
-        logoLink.append(logoPicture);
+        // let logoPicture = document.createElement('img');
+        // logoPicture.classList.add('header__logo');
+        // logoPicture.setAttribute('src', this.src);
+        // logoPicture.setAttribute('alt', 'Клоун');
+        // // отрисовка логотипа
+        // logoLink.append(logoPicture);
         // навигация
         let navHead = document.createElement('nav');
         navHead.classList.add('header__nav');
@@ -35,6 +41,7 @@ class Header {
         let aboutLink = document.createElement('a');
         aboutLink.classList.add('header__nav-link', 'header__about');
         aboutLink.setAttribute('href', '#');
+        aboutLink.setAttribute('data-text', this.about);
         aboutLink.textContent = this.about;
         navAbout.append(aboutLink);
         // добавление payment
@@ -43,6 +50,7 @@ class Header {
         let paymentLink = document.createElement('a');
         paymentLink.classList.add('header__nav-link', 'header__payment');
         paymentLink.setAttribute('href', '#');
+        paymentLink.setAttribute('data-text', this.payment);
         paymentLink.textContent = this.payment;
         navPayment.append(paymentLink);
         // добавление contacts
@@ -51,6 +59,7 @@ class Header {
         let contactsLink = document.createElement('a');
         contactsLink.classList.add('header__nav-link', 'header__contacts');
         contactsLink.setAttribute('href', '#');
+        contactsLink.setAttribute('data-text', this.contacts);
         contactsLink.textContent = this.contacts;
         navContacts.append(contactsLink);
     }

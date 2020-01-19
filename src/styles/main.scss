@@ -1,4 +1,6 @@
 @import "./reset.scss";
-// @import "./global.scss";
+@import "./global.scss";
 
+@import "./src/blocks/intro/intro.scss";
 @import "./src/blocks/header/header.scss";
+@import "./src/blocks/skills/skills.scss";

@@ -5,10 +5,14 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
+        link(href='https://fonts.googleapis.com/css?family=Expletus+Sans:400,400i,500,500i,600,600i,700,700i|Merriweather+Sans:300,300i,400,400i,700,700i,800,800i&display=swap&subset=latin-ext', rel='stylesheet')
         link(rel="stylesheet", href="css/main.css")
-    body
+    body.body
+        .body__wrap
 
-        include ../blocks/header/header.pug
+            include ../blocks/intro/intro.pug
+            include ../blocks/skills/skills.pug
     
     script(src="./js/header/Header.js")
+    script(src="./js/skills/Skills.js")
     script(src="./js/main.js")

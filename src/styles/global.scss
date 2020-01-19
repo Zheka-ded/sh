@@ -1,0 +1,17 @@
+*{
+    
+}
+
+.body{
+    width: 100%;
+    font-family: 'Expletus Sans', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.body__wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0px auto;
+}

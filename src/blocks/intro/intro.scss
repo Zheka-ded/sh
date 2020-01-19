@@ -1,0 +1,21 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: url('../img/introBG.png');
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.5;;
+    }
+}
+
+.intro__wrap{
+    width: 75%;
+}

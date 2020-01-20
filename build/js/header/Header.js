@@ -1,9 +1,7 @@
 class Header {
     constructor(logoSite, logoName, about, payment, contacts) {
-    // constructor(siteName, logo, about, payment, contacts) {
         this.logoSite = logoSite;
-        this.logoName = logoName
-        // this.src = logo;
+        this.logoName = logoName;
         this.about = about;
         this.payment = payment;
         this.contacts = contacts;
@@ -19,13 +17,6 @@ class Header {
         logoSpan.classList.add('logo__span');
         logoSpan.textContent = this.logoName;
         logoLink.append(logoSpan);
-        // картинка логотипа
-        // let logoPicture = document.createElement('img');
-        // logoPicture.classList.add('header__logo');
-        // logoPicture.setAttribute('src', this.src);
-        // logoPicture.setAttribute('alt', 'Клоун');
-        // // отрисовка логотипа
-        // logoLink.append(logoPicture);
         // навигация
         let navHead = document.createElement('nav');
         navHead.classList.add('header__nav');

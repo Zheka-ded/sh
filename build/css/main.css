@@ -145,6 +145,20 @@ table {
   max-width: 1170px;
   margin: 0px auto; }
 
+.big__title-text {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-transform: uppercase;
+  text-align: center; }
+
+.big__subtitle-text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center; }
+
 .intro {
   display: -webkit-box;
   display: -webkit-flex;
@@ -166,9 +180,40 @@ table {
     height: 100%;
     background: #000;
     opacity: 0.5; }
-
-.intro__wrap {
-  width: 75%; }
+  .intro__wrap {
+    width: 75%; }
+  .intro__title {
+    margin-top: 207px;
+    letter-spacing: -1.5px;
+    position: relative; }
+    .intro__title span {
+      color: #ef4366; }
+    .intro__title::before {
+      content: '';
+      position: absolute;
+      width: 107px;
+      height: 8px;
+      background-color: #ffffff;
+      opacity: 0.2;
+      left: -10px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .intro__title::after {
+      content: '';
+      position: absolute;
+      width: 107px;
+      height: 8px;
+      background-color: #ffffff;
+      opacity: 0.2;
+      right: -10px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  .intro__subtitle {
+    margin-top: 15px;
+    position: relative;
+    opacity: 0.85; }
 
 .header {
   display: -webkit-box;
@@ -205,6 +250,34 @@ table {
             align-items: center;
     text-decoration: none;
     font-family: 'Merriweather Sans', sans-serif; }
+
+.hexagon {
+  width: 60px;
+  height: 35px;
+  background: #ef4366;
+  position: relative; }
+
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 15px solid #ef4366; }
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 15px solid #ef4366; }
 
 .logo__span {
   position: absolute;
@@ -264,31 +337,3 @@ table {
   padding: 6px 0px;
   left: 0;
   top: 0; }
-
-.hexagon {
-  width: 60px;
-  height: 35px;
-  background: #fc645f;
-  position: relative; }
-
-.hexagon:before {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 15px solid #fc645f; }
-
-.hexagon:after {
-  content: "";
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 15px solid #fc645f; }

@@ -1,5 +1,3 @@
-
-
 .header{
     display: flex;
     width: 100%;
@@ -24,6 +22,37 @@
 
 }
 
+.hexagon {
+	width: 60px;
+	height: 35px;
+	background: $main-color;
+	position: relative;
+}
+
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -15px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 15px solid $main-color;
+}
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -15px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 15px solid $main-color;
+}
+
+
 .logo__span{
     position: absolute;
     left: 100%;
@@ -40,7 +69,6 @@
 .header__nav{
     display: flex;
     align-items: center;
-    // // background: rgb(187, 124, 124);
 
     ul{
         display: flex;
@@ -71,7 +99,7 @@
 
 .header__nav ul li a::before{
     content: attr(data-text);
-    border-bottom: 3px solid #ef4366;
+    border-bottom: 3px solid $main-color;
     color: #fff;
     white-space: nowrap;
     width: 0%;
@@ -81,36 +109,6 @@
     padding: 6px 0px;
     left: 0;
     top: 0;
-}
-
-.hexagon {
-	width: 60px;
-	height: 35px;
-	background: #fc645f;
-	position: relative;
-}
-
-.hexagon:before {
-	content: "";
-	position: absolute;
-	top: -15px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	border-bottom: 15px solid #fc645f;
-}
-.hexagon:after {
-	content: "";
-	position: absolute;
-	bottom: -15px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	border-top: 15px solid #fc645f;
 }
 
 

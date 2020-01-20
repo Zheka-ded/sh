@@ -1,7 +1,11 @@
-*{
-    
-}
+// Переменные
+$white-tetx-color: #fff; // Белый цвет z
+$big-title-size: 50px; // Размер больших заголовков
+$main-color: #ef4366; // Основной цвет
+$main-text-color: #868686; // Основной цвет текста
+$our-team-color: #565656; // Цвет текста в блоке our team
 
+// Основные стили
 .body{
     width: 100%;
     font-family: 'Expletus Sans', cursive;
@@ -14,4 +18,20 @@
     align-items: center;
     max-width: 1170px;
     margin: 0px auto;
+}
+
+.big__title-text{
+    color: $white-tetx-color;
+    font-size: $big-title-size;
+    font-weight: 700;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.big__subtitle-text{
+    color: $white-tetx-color;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
 }

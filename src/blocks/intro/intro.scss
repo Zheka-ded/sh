@@ -14,8 +14,45 @@
         background: #000;
         opacity: 0.5;;
     }
-}
+    
+    &__wrap{
+        width: 75%;
+    }
 
-.intro__wrap{
-    width: 75%;
+    &__title{
+        margin-top: 207px;
+        letter-spacing: -1.5px;
+        position: relative;
+        span {
+            color: $main-color;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 107px;
+            height: 8px;
+            background-color: #ffffff;
+            opacity: 0.2;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 107px;
+            height: 8px;
+            background-color: #ffffff;
+            opacity: 0.2;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__subtitle{
+        margin-top: 15px;
+        position: relative;
+        opacity: 0.85;
+    }
 }

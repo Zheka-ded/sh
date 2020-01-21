@@ -5,4 +5,7 @@ class Skills {
         this.subtitle = subtitle;
         this.userDescription = userDescription;
     }
+    buildSkills (out) {
+        
+    }
 }

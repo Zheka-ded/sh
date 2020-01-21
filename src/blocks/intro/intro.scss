@@ -4,6 +4,8 @@
     align-items: center;
     width: 100%;
     background: url('../img/introBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 
     &::before{
@@ -23,9 +25,7 @@
         margin-top: 207px;
         letter-spacing: -1.5px;
         position: relative;
-        span {
-            color: $main-color;
-        }
+
         &::before{
             content: '';
             position: absolute;
@@ -33,7 +33,7 @@
             height: 8px;
             background-color: #ffffff;
             opacity: 0.2;
-            left: -10px;
+            left: 0px;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -44,7 +44,7 @@
             height: 8px;
             background-color: #ffffff;
             opacity: 0.2;
-            right: -10px;
+            right: 0px;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -52,7 +52,13 @@
 
     &__subtitle{
         margin-top: 15px;
+        margin-bottom: 48px;
         position: relative;
         opacity: 0.85;
+    }
+
+    &__arrow-down{
+        margin-top: 240px;
+        margin-bottom: 30px;
     }
 }

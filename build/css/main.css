@@ -126,10 +126,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+button {
+  cursor: pointer; }
+
 .body {
   width: 100%;
   font-family: 'Expletus Sans', cursive;
-  font-family: 'Merriweather Sans', sans-serif; }
+  font-family: 'Merriweather Sans', sans-serif;
+  background: url("../img/bg.png");
+  background-size: cover; }
 
 .body__wrap {
   display: -webkit-box;
@@ -142,22 +147,106 @@ table {
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  max-width: 1170px;
-  margin: 0px auto; }
+  max-width: 1260px;
+  margin: 0px auto;
+  -webkit-box-shadow: 0px 2px 9px 5px grey;
+          box-shadow: 0px 2px 9px 5px grey;
+  background: #fff; }
 
 .big__title-text {
   color: #fff;
   font-size: 50px;
   font-weight: 700;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   text-transform: uppercase;
   text-align: center; }
+  .big__title-text span {
+    color: #fc635e; }
+
+.small__title-wrap {
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  margin-bottom: 30px; }
+  .small__title-wrap::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #868686;
+    bottom: -12px; }
+
+.small__title-text {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #868686;
+  text-align: center; }
+  .small__title-text span {
+    color: #fc635e; }
 
 .big__subtitle-text {
   color: #fff;
   font-size: 24px;
   font-weight: 300;
   text-align: center; }
+
+.small__subtitle-text {
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
+  color: #868686;
+  font-size: 20px; }
+
+.btn__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #fc635e;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+
+.btn__g {
+  background: transparent;
+  border: none;
+  color: #fc635e;
+  padding: 10px 30px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 300; }
+
+.arrow__down {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 28px;
+  height: 28px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: relative;
+  cursor: pointer; }
+
+.white__arrow {
+  background: #fc635e;
+  color: #fff; }
 
 .intro {
   display: -webkit-box;
@@ -172,6 +261,8 @@ table {
           align-items: center;
   width: 100%;
   background: url("../img/introBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative; }
   .intro::before {
     content: '';
@@ -186,8 +277,6 @@ table {
     margin-top: 207px;
     letter-spacing: -1.5px;
     position: relative; }
-    .intro__title span {
-      color: #ef4366; }
     .intro__title::before {
       content: '';
       position: absolute;
@@ -195,7 +284,7 @@ table {
       height: 8px;
       background-color: #ffffff;
       opacity: 0.2;
-      left: -10px;
+      left: 0px;
       top: 50%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
@@ -206,14 +295,18 @@ table {
       height: 8px;
       background-color: #ffffff;
       opacity: 0.2;
-      right: -10px;
+      right: 0px;
       top: 50%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
   .intro__subtitle {
     margin-top: 15px;
+    margin-bottom: 48px;
     position: relative;
     opacity: 0.85; }
+  .intro__arrow-down {
+    margin-top: 240px;
+    margin-bottom: 30px; }
 
 .header {
   display: -webkit-box;
@@ -249,12 +342,12 @@ table {
     -webkit-align-items: center;
             align-items: center;
     text-decoration: none;
-    font-family: 'Merriweather Sans', sans-serif; }
+    font-family: "Merriweather Sans", sans-serif; }
 
 .hexagon {
   width: 60px;
   height: 35px;
-  background: #ef4366;
+  background: #fc635e;
   position: relative; }
 
 .hexagon:before {
@@ -266,7 +359,7 @@ table {
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-bottom: 15px solid #ef4366; }
+  border-bottom: 15px solid #fc635e; }
 
 .hexagon:after {
   content: "";
@@ -277,7 +370,7 @@ table {
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-top: 15px solid #ef4366; }
+  border-top: 15px solid #fc635e; }
 
 .logo__span {
   position: absolute;
@@ -315,18 +408,20 @@ table {
     margin: 5px 10px;
     text-transform: uppercase;
     color: #fff; }
+    .header__nav-link:last-child {
+      margin-right: 0px; }
 
 .header__nav ul li a {
   position: relative;
   text-decoration: none;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  font-family: "Merriweather Sans", sans-serif; }
 
 .header__nav ul li a:hover::before {
   width: 100%; }
 
 .header__nav ul li a::before {
   content: attr(data-text);
-  border-bottom: 3px solid #ef4366;
+  border-bottom: 3px solid #fc635e;
   color: #fff;
   white-space: nowrap;
   width: 0%;
@@ -336,4 +431,22 @@ table {
   position: absolute;
   padding: 6px 0px;
   left: 0;
-  top: 0; }
+  top: -4.5px; }
+
+.what-can {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 0 auto; }
+  .what-can__wrap {
+    width: 75%; }
+  .what-can__title-wrap {
+    margin-top: 65px; }

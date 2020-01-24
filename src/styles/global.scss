@@ -3,6 +3,7 @@ $white-tetx-color: #fff; // Белый цвет
 $big-title-size: 50px; // Размер больших заголовков
 $main-color: #fc635e; // Основной цвет
 $main-text-color: #868686; // Основной цвет текста
+$main-subtitle-color: #adadad;
 $our-team-color: #565656; // Цвет текста в блоке our team
 $main-fonts: 'Merriweather Sans', sans-serif; // Основной шрифт
 $hexagon-wrap-color: #fe8682;
@@ -41,23 +42,16 @@ $hexagon-wrap-color: #fe8682;
     }
 }
 
-.small__title-wrap{
+.medium__title-wrap{
     margin: 0 auto;
     width: max-content;
     position: relative;
+    border-bottom: 2px solid $main-subtitle-color;
+    padding-bottom: 12px;
     margin-bottom: 30px;
-
-    &::before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background: $main-text-color;
-        bottom: -12px;
-    }
 }
 
-.small__title-text{
+.medium__title-text{
     font-family: $main-fonts;
     font-size: 28px;
     font-weight: 500;
@@ -71,18 +65,37 @@ $hexagon-wrap-color: #fe8682;
     
 }
 
+.extra-small__title-text{
+    font-family: $main-fonts;
+    text-transform: uppercase;
+    color: $main-text-color;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid $main-subtitle-color;
+}
+
 .big__subtitle-text{
+    font-family: $main-fonts;
     color: $white-tetx-color;
     font-size: 24px;
     font-weight: 300;
     text-align: center;
 }
 
-.small__subtitle-text{
+.medium__subtitle-text{
     font-family: $main-fonts;
     text-align: center;
-    color: $main-text-color;
+    color: $main-subtitle-color;
     font-size: 20px;
+}
+
+.extra-small__subtitle-text{
+    font-family: $main-fonts;
+    text-align: center;
+    color: $main-subtitle-color;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.7px;
 }
 
 .btn__wrap{
@@ -118,7 +131,12 @@ $hexagon-wrap-color: #fe8682;
     cursor: pointer;
 }
 
-.white__arrow{
+.red__arrow{
     background: $main-color;
     color: $white-tetx-color;
+}
+.white__arrow{
+    background: $white-tetx-color;
+    border: 1px solid $main-color;
+    color: $main-color;
 }

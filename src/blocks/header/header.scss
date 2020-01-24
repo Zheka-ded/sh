@@ -17,39 +17,52 @@
         align-items: center;
         text-decoration: none;
         font-family: $main-fonts;
-
+        p{
+            z-index: 1;
+        }
     }
 
 }
 
 .hexagon {
-	width: 60px;
-	height: 35px;
+	width: 59px;
+	height: 34px;
 	background: $main-color;
-	position: relative;
+    position: relative;
+    // z-index: 0;
 }
 
 .hexagon:before {
 	content: "";
-	position: absolute;
-	top: -15px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	border-bottom: 15px solid $main-color;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(60deg);
+    background: $main-color;
+    // z-index: 0;
+	// top: -15px; 
+	// left: 0;
+	// width: 0;
+	// height: 0;
+	// border-left: 30px solid transparent;
+	// border-right: 30px solid transparent;
+	// border-bottom: 15px solid $main-color;
 }
 .hexagon:after {
 	content: "";
-	position: absolute;
-	bottom: -15px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	border-top: 15px solid $main-color;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    background: $main-color;
+    // z-index: 0;
+	// bottom: -15px; 
+	// left: 0;
+	// width: 0;
+	// height: 0;
+	// border-left: 30px solid transparent;
+	// border-right: 30px solid transparent;
+	// border-top: 15px solid $main-color;
 }
 
 

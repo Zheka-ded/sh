@@ -163,42 +163,54 @@ button {
   .big__title-text span {
     color: #fc635e; }
 
-.small__title-wrap {
+.medium__title-wrap {
   margin: 0 auto;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   position: relative;
+  border-bottom: 2px solid #adadad;
+  padding-bottom: 12px;
   margin-bottom: 30px; }
-  .small__title-wrap::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: #868686;
-    bottom: -12px; }
 
-.small__title-text {
+.medium__title-text {
   font-family: "Merriweather Sans", sans-serif;
   font-size: 28px;
   font-weight: 500;
   text-transform: uppercase;
   color: #868686;
   text-align: center; }
-  .small__title-text span {
+  .medium__title-text span {
     color: #fc635e; }
 
+.extra-small__title-text {
+  font-family: "Merriweather Sans", sans-serif;
+  text-transform: uppercase;
+  color: #868686;
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 1px solid #adadad; }
+
 .big__subtitle-text {
+  font-family: "Merriweather Sans", sans-serif;
   color: #fff;
   font-size: 24px;
   font-weight: 300;
   text-align: center; }
 
-.small__subtitle-text {
+.medium__subtitle-text {
   font-family: "Merriweather Sans", sans-serif;
   text-align: center;
-  color: #868686;
+  color: #adadad;
   font-size: 20px; }
+
+.extra-small__subtitle-text {
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
+  color: #adadad;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.7px; }
 
 .btn__wrap {
   display: -webkit-box;
@@ -244,9 +256,14 @@ button {
   position: relative;
   cursor: pointer; }
 
-.white__arrow {
+.red__arrow {
   background: #fc635e;
   color: #fff; }
+
+.white__arrow {
+  background: #fff;
+  border: 1px solid #fc635e;
+  color: #fc635e; }
 
 .intro {
   display: -webkit-box;
@@ -269,8 +286,8 @@ button {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #000;
-    opacity: 0.5; }
+    background-color: #131313;
+    opacity: 0.7; }
   .intro__wrap {
     width: 75%; }
   .intro__title {
@@ -343,34 +360,32 @@ button {
             align-items: center;
     text-decoration: none;
     font-family: "Merriweather Sans", sans-serif; }
+    .header__logo-link p {
+      z-index: 1; }
 
 .hexagon {
-  width: 60px;
-  height: 35px;
+  width: 59px;
+  height: 34px;
   background: #fc635e;
   position: relative; }
 
 .hexagon:before {
   content: "";
   position: absolute;
-  top: -15px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 15px solid #fc635e; }
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  background: #fc635e; }
 
 .hexagon:after {
   content: "";
   position: absolute;
-  bottom: -15px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 15px solid #fc635e; }
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  background: #fc635e; }
 
 .logo__span {
   position: absolute;
@@ -473,10 +488,11 @@ button {
     -webkit-box-align: center;
     -webkit-align-items: center;
             align-items: center;
-    margin: 10px; }
+    margin: 10px;
+    padding: 5px; }
   .what-can__hexagon-wrap {
-    width: 108px;
-    height: 62px;
+    width: 100px;
+    height: 58px;
     background: #fe8682;
     position: relative;
     z-index: 0;
@@ -489,30 +505,28 @@ button {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
             justify-content: center;
+    margin-top: 110px;
+    margin-bottom: 50px;
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease; }
     .what-can__hexagon-wrap:before {
       content: "";
       position: absolute;
-      top: -30px;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-left: 54px solid transparent;
-      border-right: 54px solid transparent;
-      border-bottom: 30px solid #fe8682;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: rotate(60deg);
+              transform: rotate(60deg);
+      background: #fe8682;
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
     .what-can__hexagon-wrap:after {
       content: "";
       position: absolute;
-      bottom: -30px;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-left: 54px solid transparent;
-      border-right: 54px solid transparent;
-      border-top: 30px solid #fe8682;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: rotate(-60deg);
+              transform: rotate(-60deg);
+      background: #fe8682;
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
     .what-can__hexagon-wrap:hover {
@@ -520,11 +534,11 @@ button {
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
     .what-can__hexagon-wrap:hover::before {
-      border-bottom-color: #fc635e;
+      background: #fc635e;
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
     .what-can__hexagon-wrap:hover::after {
-      border-top-color: #fc635e;
+      background: #fc635e;
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
     .what-can__hexagon-wrap:hover .what-can__hexagon {
@@ -532,11 +546,11 @@ button {
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
     .what-can__hexagon-wrap:hover .what-can__hexagon::before {
-      border-bottom-color: #fff;
+      background: #fff;
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
     .what-can__hexagon-wrap:hover .what-can__hexagon::after {
-      border-top-color: #fff;
+      background: #fff;
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
     .what-can__hexagon-wrap:hover .what-can__svg {
@@ -544,8 +558,8 @@ button {
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
   .what-can__hexagon {
-    width: 100px;
-    height: 55px;
+    width: 90px;
+    height: 52px;
     background: #fc635e;
     position: relative;
     z-index: 1;
@@ -554,25 +568,23 @@ button {
     .what-can__hexagon:before {
       content: "";
       position: absolute;
-      top: -28px;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-left: 50.5px solid transparent;
-      border-right: 50.5px solid transparent;
-      border-bottom: 28px solid #fc635e;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: rotate(60deg);
+              transform: rotate(60deg);
+      background: #fc635e;
+      z-index: 1;
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
     .what-can__hexagon:after {
       content: "";
       position: absolute;
-      bottom: -28px;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-left: 50.5px solid transparent;
-      border-right: 50.5px solid transparent;
-      border-top: 28px solid #fc635e;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: rotate(-60deg);
+              transform: rotate(-60deg);
+      background: #fc635e;
+      z-index: 1;
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
   .what-can__title-wrap {
@@ -591,4 +603,48 @@ button {
     fill: #fff;
     width: 30px;
     -webkit-transition: 0.3s all ease;
-    transition: 0.3s all ease; }
+    transition: 0.3s all ease;
+    z-index: 2; }
+  .what-can__title {
+    padding-bottom: 11px;
+    margin-bottom: 21px; }
+  .what-can__arrow-down {
+    margin-top: 51px;
+    margin-bottom: 15px; }
+
+.expand {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  background: url("../img/expandBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .expand::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #131313;
+    opacity: 0.7; }
+  .expand__wrap {
+    width: 75%;
+    position: relative; }
+  .expand__border {
+    border: 8px solid rgba(255, 255, 255, 0.1);
+    padding-top: 123px;
+    padding-bottom: 100px;
+    margin-top: 90px; }
+  .expand__btn-wrap {
+    margin-top: 51px; }
+  .expand__arrow-down {
+    margin-top: 53px;
+    margin-bottom: 30px; }

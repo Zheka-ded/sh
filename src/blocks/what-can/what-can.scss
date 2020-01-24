@@ -22,41 +22,38 @@
         flex-direction: column;
         align-items: center;
         margin: 10px;
+        padding: 5px;
     }
 
     &__hexagon-wrap{
-        width: 108px;
-        height: 62px;
+        width: 100px;
+        height: 58px;
         background: $hexagon-wrap-color;
         position: relative;
         z-index: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 110px;
+        margin-bottom: 50px;
         transition: 0.3s all ease;
 
         &:before {
             content: "";
             position: absolute;
-            top: -30px; 
-            left: 0;
-            width: 0;
-            height: 0;
-            border-left: 54px solid transparent;
-            border-right: 54px solid transparent;
-            border-bottom: 30px solid $hexagon-wrap-color;
+            width: 100%;
+            height: 100%;
+            transform: rotate(60deg);
+            background: $hexagon-wrap-color;
             transition: 0.3s all ease;
         }
         &:after {
             content: "";
             position: absolute;
-            bottom: -30px; 
-            left: 0;
-            width: 0;
-            height: 0;
-            border-left: 54px solid transparent;
-            border-right: 54px solid transparent;
-            border-top: 30px solid $hexagon-wrap-color;
+            width: 100%;
+            height: 100%;
+            transform: rotate(-60deg);
+            background: $hexagon-wrap-color;
             transition: 0.3s all ease;
         }
 
@@ -66,12 +63,12 @@
         }
 
         &:hover::before {
-            border-bottom-color: $main-color;
+            background: $main-color;
             transition: 0.3s all ease;
         }
 
         &:hover::after {
-            border-top-color: $main-color;
+            background: $main-color;
             transition: 0.3s all ease;
         }
 
@@ -81,12 +78,12 @@
         }
 
         &:hover .what-can__hexagon::before{
-            border-bottom-color: $white-tetx-color;
+            background: $white-tetx-color;
             transition: 0.3s all ease;
         }
 
         &:hover .what-can__hexagon::after{
-            border-top-color: $white-tetx-color;
+            background: $white-tetx-color;
             transition: 0.3s all ease;
         }
 
@@ -98,8 +95,8 @@
     }
 
     &__hexagon{
-        width: 100px;
-        height: 55px;
+        width: 90px;
+        height: 52px;
         background: $main-color;
         position: relative;
         z-index: 1;
@@ -108,25 +105,21 @@
         &:before {
             content: "";
             position: absolute;
-            top: -28px; 
-            left: 0;
-            width: 0;
-            height: 0;
-            border-left: 50.5px solid transparent;
-            border-right: 50.5px solid transparent;
-            border-bottom: 28px solid $main-color;
+            width: 100%;
+            height: 100%;
+            transform: rotate(60deg);
+            background: $main-color;
+            z-index: 1;
             transition: 0.3s all ease;
         }
         &:after {
             content: "";
             position: absolute;
-            bottom: -28px; 
-            left: 0;
-            width: 0;
-            height: 0;
-            border-left: 50.5px solid transparent;
-            border-right: 50.5px solid transparent;
-            border-top: 28px solid $main-color;
+            width: 100%;
+            height: 100%;
+            transform: rotate(-60deg);
+            background: $main-color;
+            z-index: 1;
             transition: 0.3s all ease;
         }
     }
@@ -145,6 +138,17 @@
         fill: #fff;
         width: 30px;
         transition: 0.3s all ease;
+        z-index: 2;
+    }
+
+    &__title{
+        padding-bottom: 11px;
+        margin-bottom: 21px;    
+    }
+
+    &__arrow-down{
+        margin-top: 51px;
+        margin-bottom: 15px;
     }
 
 }

@@ -648,3 +648,117 @@ button {
   .expand__arrow-down {
     margin-top: 53px;
     margin-bottom: 30px; }
+
+.progress__title-wrap {
+  margin-top: 65px; }
+
+.progress__hexagons-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  height: 500px;
+  position: relative;
+  margin: 150px 0px; }
+
+.progress__hexagon {
+  position: relative;
+  width: 172px;
+  height: 99.5px;
+  margin: 10px;
+  border-left: 1px solid #565656;
+  border-right: 1px solid #565656; }
+  .progress__hexagon-title {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .progress__hexagon::before, .progress__hexagon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #565656;
+    border-right: 1px solid #565656; }
+  .progress__hexagon::before {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg); }
+  .progress__hexagon::after {
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg); }
+  .progress__hexagon-step-one {
+    position: absolute;
+    left: -106px;
+    top: 48px;
+    border-right: 3px solid #fc635e; }
+    .progress__hexagon-step-one::before {
+      content: '';
+      position: absolute;
+      border-left: 3px solid #fc635e; }
+    .progress__hexagon-step-one::after {
+      content: '';
+      position: absolute;
+      border-right: 3px solid #fc635e; }
+  .progress__hexagon-step-picture {
+    position: absolute;
+    left: -66px;
+    top: 226px; }
+  .progress__hexagon-step-two {
+    position: absolute;
+    left: 148px;
+    top: 97px;
+    border-left: 3px solid #fc635e; }
+    .progress__hexagon-step-two::before {
+      content: '';
+      position: absolute;
+      border-left: 3px solid #fc635e; }
+  .progress__hexagon-step-three {
+    position: absolute;
+    left: 233px;
+    top: -53px;
+    border-right: 3px solid #fc635e;
+    border-left: 3px solid #fc635e; }
+    .progress__hexagon-step-three::before {
+      content: '';
+      position: absolute;
+      border-left: 3px solid #fc635e; }
+    .progress__hexagon-step-three::after {
+      content: '';
+      position: absolute;
+      border-right: 3px solid #fc635e; }
+  .progress__hexagon-step-four {
+    position: absolute;
+    left: 406px;
+    top: 48px;
+    border-right: 3px solid #fc635e; }
+    .progress__hexagon-step-four::before {
+      content: '';
+      position: absolute;
+      border-left: 3px solid #fc635e;
+      border-right: 3px solid #fc635e; }
+    .progress__hexagon-step-four::after {
+      content: '';
+      position: absolute;
+      border-right: 3px solid #fc635e; }
+
+.progress__img {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.big__hexagon {
+  width: 264px;
+  height: 152.5px; }

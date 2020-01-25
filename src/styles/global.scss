@@ -7,6 +7,7 @@ $main-subtitle-color: #adadad;
 $our-team-color: #565656; // Цвет текста в блоке our team
 $main-fonts: 'Merriweather Sans', sans-serif; // Основной шрифт
 $hexagon-wrap-color: #fe8682;
+$bg-two: #f2f2f2;
 
 // Основные стили
 .body{
@@ -44,6 +45,9 @@ $hexagon-wrap-color: #fe8682;
 
 .medium__title-wrap{
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: max-content;
     position: relative;
     border-bottom: 2px solid $main-subtitle-color;

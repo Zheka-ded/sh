@@ -686,8 +686,8 @@ button {
 
 .progress__hexagon {
   position: relative;
-  width: 172px;
-  height: 99.5px;
+  width: 167px;
+  height: 98px;
   border-left: 1px solid #565656;
   border-right: 1px solid #565656; }
   .progress__hexagon-title {
@@ -702,6 +702,7 @@ button {
     position: absolute;
     width: 100%;
     height: 100%;
+    left: -2px;
     border-left: 1px solid #565656;
     border-right: 1px solid #565656; }
   .progress__hexagon::before {
@@ -712,8 +713,8 @@ button {
             transform: rotate(-60deg); }
   .progress__hexagon-step-one {
     position: absolute;
-    left: -106px;
-    top: 48px;
+    left: -103px;
+    top: 52px;
     border-right: 3px solid #fc635e; }
     .progress__hexagon-step-one::before {
       content: '';
@@ -727,19 +728,31 @@ button {
     position: absolute;
     left: -66px;
     top: 226px; }
+    .progress__hexagon-step-picture::before {
+      content: '';
+      position: absolute;
+      left: -1px; }
+    .progress__hexagon-step-picture::after {
+      content: '';
+      left: -1px;
+      position: absolute;
+      border-right: 3px solid #fc635e; }
   .progress__hexagon-step-two {
     position: absolute;
     left: 148px;
-    top: 97px;
+    top: 102px;
     border-left: 3px solid #fc635e; }
     .progress__hexagon-step-two::before {
       content: '';
       position: absolute;
       border-left: 3px solid #fc635e; }
+    .progress__hexagon-step-two::after {
+      content: '';
+      background: #fff; }
   .progress__hexagon-step-three {
     position: absolute;
-    left: 233px;
-    top: -53px;
+    left: 232px;
+    top: -44px;
     border-right: 3px solid #fc635e;
     border-left: 3px solid #fc635e; }
     .progress__hexagon-step-three::before {
@@ -752,16 +765,18 @@ button {
       border-right: 3px solid #fc635e; }
   .progress__hexagon-step-four {
     position: absolute;
-    left: 406px;
-    top: 48px;
+    left: 403px;
+    top: 55px;
     border-right: 3px solid #fc635e; }
     .progress__hexagon-step-four::before {
       content: '';
+      left: -2px;
       position: absolute;
       border-left: 3px solid #fc635e;
       border-right: 3px solid #fc635e; }
     .progress__hexagon-step-four::after {
       content: '';
+      left: -1px;
       position: absolute;
       border-right: 3px solid #fc635e; }
 
@@ -773,5 +788,5 @@ button {
   top: 50%; }
 
 .big__hexagon {
-  width: 264px;
-  height: 152.5px; }
+  width: 262px;
+  height: 153px; }

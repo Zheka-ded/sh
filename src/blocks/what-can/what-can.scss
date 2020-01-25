@@ -9,9 +9,9 @@
         width: 75%;
     }
 
-    &__title-wrap{
-        width: 100%;
-    }
+    // &__title-wrap{
+    //     width: 100%;
+    // }
 
     &__item-wrap{
         display: flex;
@@ -30,7 +30,7 @@
     }
 
     &__hexagon-wrap{
-        width: 100px;
+        width: 101px;
         height: 58px;
         background: $hexagon-wrap-color;
         position: relative;

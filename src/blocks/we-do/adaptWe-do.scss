@@ -9,18 +9,37 @@
 
     .we-do{
 
+        &__item-right{
+            align-items: center;
+        }
+
         &__wrap{
-            width: 90%;
+            width: 100%;
+        }
+
+        &__thunderbolt img{
+            width: 100%;
+            // background-position: center;
+            // background-size: contain;
+        }
+
+        &__thunderbolt{
+
+            &::before{
+                width: 276px;
+                height: 155px;
+
+            }
         }
 
         &__macbook{
-            bottom: -50px;
-            left: -17px;
+            bottom: -60px;
+            left: -37px;
         }
 
         &__ipad{
-            bottom: -50px;
-            right: -15px;
+            bottom: -90px;
+            right: -25px;
         }
 
     }

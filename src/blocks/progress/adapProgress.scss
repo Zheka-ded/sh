@@ -3,18 +3,18 @@
     .progress{
 
         &__hexagons-wrap{
-            height: 1000px;
+            height: 900px;
         }
     
         &__hexagon{
     
             &-step-one{
-                left: 140px;
+                left: 40px;
                 top: -48px;
             }
     
             &-step-picture{
-                left: 176px;
+                left: 76px;
                 top: 126px;
                 border-right: 3px solid $main-color;
     
@@ -25,7 +25,7 @@
             }
 
             &-step-two{
-                left: 138px;
+                left: 38px;
                 top: 356px;
     
                 &::after{
@@ -34,7 +34,7 @@
                 }
             }
             &-step-three{
-                left: 223px;
+                left: 123px;
                 top: 502px;
                 border-right: 1px solid $our-team-color;
                 z-index: 3;
@@ -50,21 +50,16 @@
                 }
             }
             &-step-four{
-                left: 261px;
+                left: 161px;
                 top: 677px;
                 z-index: 2;
                 
                 &::before{
                     border-left: 1px solid $our-team-color;
                 }
-                // &::before{
-                //     border-left: 1px solid $our-team-color;
-                //     border-right: 3px solid $main-color;
-                // }
     
                 &::after{
                     border-right: 1px solid $our-team-color;
-                    // border-left: 3px solid $main-color;
                 }
                 
             }

@@ -174,8 +174,8 @@ $red-btn-color: #f2f2f2;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    // align-items: center;
     width: 100%;
 }
 
@@ -249,7 +249,7 @@ $red-btn-color: #f2f2f2;
 .right-part{
     display: flex;
     // width: 55%;
-    width: 500px;
+    // width: 500px;
     margin: 15px;
     // flex-direction: row;
     // justify-content: flex-end;

@@ -10,12 +10,12 @@
     .advertising{
 
         &__wrap{
-            width: 100%;
+            width: 90%;
         }
         
-        &__item-right{
-            width: 100%;
-        }
+        // &__item-right{
+        //     width: 100%;
+        // }
 
         &__macbook{
             background-repeat: no-repeat;
@@ -23,11 +23,15 @@
             background-size: contain;
 
             &::before{
-                right: 54px;
-                top: 33px;
-                width: 338px;
-                height: 210px;
+                right: 37px;
+                top: 11px;
+                width: 226px;
+                height: 144px;
             }
+        }
+
+        &__macbook img{
+            width: 100%;
         }
 
         // &__ipad{

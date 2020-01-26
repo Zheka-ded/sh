@@ -303,12 +303,9 @@ button {
           flex-direction: row;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
   width: 100%; }
 
 .left-part {
@@ -377,14 +374,19 @@ button {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  width: 500px;
   margin: 15px; }
 
 @media screen and (max-width: 638px) {
   .big__title-text {
     font-size: 30px; }
   .medium__title-text {
-    font-size: 22px; } }
+    font-size: 22px; }
+  .two-part {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center; }
+  .right-part {
+    width: 300px; } }
 
 .intro {
   display: -webkit-box;
@@ -933,24 +935,24 @@ button {
 
 @media screen and (max-width: 980px) {
   .progress__hexagons-wrap {
-    height: 1000px; }
+    height: 900px; }
   .progress__hexagon-step-one {
-    left: 140px;
+    left: 40px;
     top: -48px; }
   .progress__hexagon-step-picture {
-    left: 176px;
+    left: 76px;
     top: 126px;
     border-right: 3px solid #fc635e; }
     .progress__hexagon-step-picture::before {
       border-right: 3px solid #fc635e; }
   .progress__hexagon-step-two {
-    left: 138px;
+    left: 38px;
     top: 356px; }
     .progress__hexagon-step-two::after {
       border-right: 3px solid #fc635e;
       border-left: 3px solid #fc635e; }
   .progress__hexagon-step-three {
-    left: 223px;
+    left: 123px;
     top: 502px;
     border-right: 1px solid #565656;
     z-index: 3; }
@@ -961,7 +963,7 @@ button {
       border-right: 1px solid #565656;
       border-left: 3px solid #fc635e; }
   .progress__hexagon-step-four {
-    left: 261px;
+    left: 161px;
     top: 677px;
     z-index: 2; }
     .progress__hexagon-step-four::before {
@@ -1022,14 +1024,11 @@ button {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
             flex-direction: column;
-    height: 326px;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+            align-items: flex-end;
     position: relative; }
   .we-do__thunderbolt {
-    width: 100%;
-    height: 308px;
-    background: url("../img/ThunderboltDisplay.png");
-    background-repeat: no-repeat;
-    background-position: right;
     position: relative; }
     .we-do__thunderbolt::before {
       content: '';
@@ -1043,14 +1042,9 @@ button {
       width: 357px;
       height: 200px; }
   .we-do__macbook {
-    width: 289px;
-    height: 170px;
-    background: url("../img/MacBook.png");
-    background-repeat: no-repeat;
-    background-position: right;
     position: absolute;
-    bottom: -12px;
-    left: 36px; }
+    bottom: -45px;
+    left: -62px; }
     .we-do__macbook::before {
       content: '';
       position: absolute;
@@ -1063,13 +1057,8 @@ button {
       width: 219px;
       height: 137px; }
   .we-do__ipad {
-    width: 129px;
-    height: 189px;
-    background: url("../img/iPad.png");
-    background-repeat: no-repeat;
-    background-position: right;
     position: absolute;
-    bottom: -12px;
+    bottom: -45px;
     right: -38px; }
     .we-do__ipad::before {
       content: '';
@@ -1087,14 +1076,23 @@ button {
     margin-bottom: 25px; }
 
 @media screen and (max-width: 638px) {
+  .we-do__item-right {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center; }
   .we-do__wrap {
-    width: 90%; }
+    width: 100%; }
+  .we-do__thunderbolt img {
+    width: 100%; }
+  .we-do__thunderbolt::before {
+    width: 276px;
+    height: 155px; }
   .we-do__macbook {
-    bottom: -50px;
-    left: -17px; }
+    bottom: -60px;
+    left: -37px; }
   .we-do__ipad {
-    bottom: -50px;
-    right: -15px; } }
+    bottom: -90px;
+    right: -25px; } }
 
 .advertising {
   width: 100%;
@@ -1129,13 +1127,8 @@ button {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-            flex-direction: column;
-    width: 503px;
-    height: 296px; }
+            flex-direction: column; }
   .advertising__macbook {
-    width: 100%;
-    height: 100%;
-    background: url("../img/MacBook2.png");
     position: relative; }
     .advertising__macbook::before {
       content: '';
@@ -1154,15 +1147,15 @@ button {
 
 @media screen and (max-width: 638px) {
   .advertising__wrap {
-    width: 100%; }
-  .advertising__item-right {
-    width: 100%; }
+    width: 90%; }
   .advertising__macbook {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain; }
     .advertising__macbook::before {
-      right: 54px;
-      top: 33px;
-      width: 338px;
-      height: 210px; } }
+      right: 37px;
+      top: 11px;
+      width: 226px;
+      height: 144px; }
+  .advertising__macbook img {
+    width: 100%; } }

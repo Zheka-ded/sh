@@ -26,29 +26,31 @@
         margin-top: 207px;
         letter-spacing: -1.5px;
         position: relative;
+        // line-height: 60px;
+        line-height: 1.4;
 
-        &::before{
-            content: '';
-            position: absolute;
-            width: 107px;
-            height: 8px;
-            background-color: #ffffff;
-            opacity: 0.2;
-            left: 0px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        &::after{
-            content: '';
-            position: absolute;
-            width: 107px;
-            height: 8px;
-            background-color: #ffffff;
-            opacity: 0.2;
-            right: 0px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
+        // &::before{
+        //     content: '';
+        //     position: absolute;
+        //     width: 107px;
+        //     height: 8px;
+        //     background-color: #ffffff;
+        //     opacity: 0.2;
+        //     left: 0px;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        // }
+        // &::after{
+        //     content: '';
+        //     position: absolute;
+        //     width: 107px;
+        //     height: 8px;
+        //     background-color: #ffffff;
+        //     opacity: 0.2;
+        //     right: 0px;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        // }
     }
 
     &__subtitle{

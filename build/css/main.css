@@ -564,7 +564,9 @@ button {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
               flex-direction: column;
-      margin-top: 35px; } }
+      margin-top: 35px; }
+    .header__nav-link {
+      font-size: 14px; } }
 
 .what-can {
   width: 100%;

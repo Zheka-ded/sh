@@ -19,6 +19,15 @@
         margin: 150px 0px 0px 0px;
     }
 
+    &__text-wrap{
+        width: 90%;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+    }
+
     &__hexagon{
         position: relative;
         width: 167px;
@@ -30,14 +39,22 @@
         // overflow: hidden;
         // z-index: 0;
 
-        &-title{
-            // width: max-content;
-            position: absolute;
-            z-index: 1;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+        &__title-wrap{
+            margin: 0px auto 10px;
+            padding: 0px 0px 5px 0px;
         }
+
+        // &-title{
+        //     margin: 0;
+        //     padding: 0;
+        //     // width: max-content;
+        //     // position: absolute;
+        //     // z-index: 1;
+        //     // left: 50%;
+        //     // top: 50%;
+        //     // transform: translate(-50%, -50%);
+        // }
+        
 
         &::before, &::after{
             content: '';
@@ -130,8 +147,7 @@
 
             &::after{
                 content: '';
-                // position: absolute;
-                // border-right: 3px solid $main-color;
+                position: absolute;
                 background: $white-tetx-color;
             }
         }

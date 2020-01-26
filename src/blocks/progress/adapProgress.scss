@@ -1,0 +1,161 @@
+@media screen and (max-width: 980px) {
+
+    .progress{
+
+        &__hexagons-wrap{
+            height: 1000px;
+        }
+    
+        &__hexagon{
+            // position: relative;
+            // width: 167px;
+            // height: 98px;
+            // // background: rebeccapurple;
+            // // margin: 10px;
+            // border-left: 1px solid $our-team-color;
+            // border-right: 1px solid $our-team-color;
+            // // overflow: hidden;
+            // // z-index: 0;
+    
+            // &__title-wrap{
+            //     margin: 0px auto 10px;
+            //     padding: 0px 0px 5px 0px;
+            // }
+    
+    
+            // &::before, &::after{
+            //     content: '';
+            //     position: absolute;
+            //     width: 100%;
+            //     height: 100%;
+            //     left: -2px;
+            //     // background: rebeccapurple;
+            //     border-left: 1px solid $our-team-color;
+            //     border-right: 1px solid $our-team-color;
+            //     // overflow: hidden;
+            // }
+    
+            // &::before{
+            //     transform: rotate(60deg);
+            // }
+    
+            // &::after{
+            //     transform: rotate(-60deg);
+            // }
+    
+    
+            &-step-one{
+                // position: absolute;
+                left: 140px;
+                top: -48px;
+                // border-right: 3px solid $main-color;
+    
+                // &::before{
+                //     content: '';
+                //     position: absolute;
+                //     border-left: 3px solid $main-color;
+                //     // border-right: 3px solid $main-color;
+                    
+                // }
+    
+                // &::after{
+                //     content: '';
+                //     position: absolute;
+                //     border-right: 3px solid $main-color;
+                // }
+            }
+    
+            &-step-picture{
+                // position: absolute;
+                left: 176px;
+                top: 126px;
+                border-right: 3px solid $main-color;
+    
+                &::before{
+                    // content: '';
+                //     position: absolute;
+                //     left: -1px;
+                    border-right: 3px solid $main-color;
+                }
+    
+                // &::after{
+                //     content: '';
+                // //     left: -1px;
+                // //     position: absolute;
+                // //     border-right: 3px solid $main-color;
+                // //     // height: 50%;
+                // }
+            }
+
+            &-step-two{
+                // position: absolute;
+                left: 138px;
+                top: 356px;
+            
+                // border-left: 3px solid $main-color;
+                
+                // &::before{
+                //     content: '';
+                //     position: absolute;
+                //     border-left: 3px solid $main-color;
+                // }
+    
+                &::after{
+                    border-right: 3px solid $main-color;
+                    
+                    border-left: 3px solid $main-color;
+                    // content: '';
+                    // position: absolute;
+                    // background: none;
+                }
+            }
+            &-step-three{
+                // position: absolute;
+                left: 223px;
+                top: 502px;
+                border-right: 1px solid $our-team-color;
+                // border-left: 3px solid $main-color;
+                z-index: 3;
+                
+                &::before{
+                    // content: '';
+                    // position: absolute;
+                    border-left: 1px solid $our-team-color;
+                    border-right: 3px solid $main-color;
+                }
+    
+                &::after{
+                    // content: '';
+                    // position: absolute;
+                    border-right: 1px solid $our-team-color;
+                    border-left: 3px solid $main-color;
+                }
+            }
+            &-step-four{
+                // position: absolute;
+                left: 261px;
+                top: 677px;
+                // border-right: 3px solid $main-color;
+                z-index: 2;
+                
+                &::before{
+                    // content: '';
+                    // left: -2px;
+                    // position: absolute;
+                    border-left: 1px solid $our-team-color;
+                    // border-right: 3px solid $main-color;
+                }
+    
+                // &::after{
+                //     content: '';
+                //     left: -1px;
+                //     position: absolute;
+                //     border-right: 3px solid $main-color;
+                // }
+            }
+    
+        }
+        
+    }
+
+}

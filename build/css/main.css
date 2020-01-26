@@ -131,8 +131,9 @@ button {
 
 .body {
   width: 100%;
-  font-family: 'Expletus Sans', cursive;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Muli', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: url("../img/bg.png");
   background-size: cover; }
 
@@ -157,7 +158,7 @@ button {
   color: #fff;
   font-size: 50px;
   font-weight: 700;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   text-transform: uppercase;
   text-align: center; }
   .big__title-text span {
@@ -184,12 +185,13 @@ button {
   margin-bottom: 30px; }
 
 .medium__title-text {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 28px;
   font-weight: 500;
   text-transform: uppercase;
   color: #868686;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.25; }
   .medium__title-text span {
     color: #fc635e; }
 
@@ -197,41 +199,41 @@ button {
   color: #868686;
   font-size: 24px;
   font-weight: 500;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   text-transform: uppercase; }
   .small__title-text span {
     color: #fc635e; }
 
 .extra-small__title-text {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   text-transform: uppercase;
   color: #868686;
   text-align: center;
   border-bottom: 1px solid #adadad; }
 
 .big__subtitle-text {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   color: #fff;
   font-size: 24px;
   font-weight: 300;
   text-align: center; }
 
 .medium__subtitle-text {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   text-align: center;
   color: #adadad;
   font-size: 20px; }
 
 .small__subtitle-text {
   color: #adadad;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: -0.1px;
   text-align: center; }
 
 .extra-small__subtitle-text {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   text-align: center;
   color: #adadad;
   font-size: 15px;
@@ -256,7 +258,7 @@ button {
   border: none;
   color: #fc635e;
   padding: 10px 30px;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 24px;
   font-weight: 300; }
 
@@ -317,10 +319,11 @@ button {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
-  width: 45%; }
+  width: 380px;
+  margin: 15px; }
   .left-part__title {
     color: #868686;
-    font-family: "Merriweather Sans", sans-serif;
+    font-family: "Muli", sans-serif;
     font-size: 28px;
     font-weight: 500;
     text-transform: uppercase;
@@ -328,9 +331,9 @@ button {
     padding-left: 12px; }
   .left-part__subtitle {
     color: #adadad;
-    font-family: "Merriweather Sans", sans-serif;
+    font-family: "Muli", sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 24px; }
   .left-part__btn-wrap {
     display: -webkit-box;
@@ -349,7 +352,11 @@ button {
     background: none;
     color: #f2f2f2;
     font-size: 20px;
-    font-family: "Merriweather Sans", sans-serif; }
+    font-family: "Muli", sans-serif; }
+  .left-part__reverse {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+            align-items: flex-end; }
 
 .reverse {
   -webkit-box-orient: horizontal;
@@ -370,7 +377,8 @@ button {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  width: 55%; }
+  width: 500px;
+  margin: 15px; }
 
 .intro {
   display: -webkit-box;
@@ -398,17 +406,12 @@ button {
   .intro__wrap {
     width: 75%; }
   .intro__title {
-    margin-top: 207px;
-    letter-spacing: -1.5px;
+    margin-top: 140px;
+    letter-spacing: -1px;
     position: relative;
     line-height: 1.4; }
-  .intro__subtitle {
-    margin-top: 15px;
-    margin-bottom: 48px;
-    position: relative;
-    opacity: 0.85; }
   .intro__arrow-down {
-    margin-top: 240px;
+    margin-top: 140px;
     margin-bottom: 30px; }
 
 .header {
@@ -445,7 +448,7 @@ button {
     -webkit-align-items: center;
             align-items: center;
     text-decoration: none;
-    font-family: "Merriweather Sans", sans-serif; }
+    font-family: "Muli", sans-serif; }
     .header__logo-link p {
       z-index: 1; }
 
@@ -515,7 +518,7 @@ button {
 .header__nav ul li a {
   position: relative;
   text-decoration: none;
-  font-family: "Merriweather Sans", sans-serif; }
+  font-family: "Muli", sans-serif; }
 
 .header__nav ul li a:hover::before {
   width: 100%; }
@@ -684,6 +687,7 @@ button {
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
   .what-can__title-wrap {
+    width: 100%;
     margin-top: 65px; }
   .what-can__svg-wrap {
     display: -webkit-box;
@@ -735,15 +739,27 @@ button {
     width: 75%;
     position: relative; }
   .expand__border {
-    border: 8px solid rgba(255, 255, 255, 0.1);
-    padding-top: 123px;
-    padding-bottom: 100px;
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    padding-top: 80px;
+    padding-bottom: 50px;
     margin-top: 90px; }
+  .expand__title {
+    line-height: 1.4; }
   .expand__btn-wrap {
     margin-top: 51px; }
   .expand__arrow-down {
     margin-top: 53px;
     margin-bottom: 30px; }
+  .expand__title-text {
+    font-family: "Muli", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    opacity: 0.95;
+    margin: 30px 60px;
+    line-height: 1.6; }
 
 .progress__title-wrap {
   margin-top: 65px; }
@@ -781,6 +797,7 @@ button {
   position: relative;
   width: 167px;
   height: 98px;
+  background: #fff;
   border-left: 1px solid #565656;
   border-right: 1px solid #565656; }
   .progress__hexagon__title-wrap {
@@ -792,6 +809,7 @@ button {
     width: 100%;
     height: 100%;
     left: -2px;
+    background: #fff;
     border-left: 1px solid #565656;
     border-right: 1px solid #565656; }
   .progress__hexagon::before {
@@ -837,8 +855,7 @@ button {
       border-left: 3px solid #fc635e; }
     .progress__hexagon-step-two::after {
       content: '';
-      position: absolute;
-      background: #fff; }
+      position: absolute; }
   .progress__hexagon-step-three {
     position: absolute;
     left: 232px;
@@ -875,11 +892,48 @@ button {
   width: 100%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  top: 50%; }
+  top: 50%;
+  z-index: 1; }
 
 .big__hexagon {
   width: 262px;
   height: 153px; }
+
+@media screen and (max-width: 980px) {
+  .progress__hexagons-wrap {
+    height: 1000px; }
+  .progress__hexagon-step-one {
+    left: 140px;
+    top: -48px; }
+  .progress__hexagon-step-picture {
+    left: 176px;
+    top: 126px;
+    border-right: 3px solid #fc635e; }
+    .progress__hexagon-step-picture::before {
+      border-right: 3px solid #fc635e; }
+  .progress__hexagon-step-two {
+    left: 138px;
+    top: 356px; }
+    .progress__hexagon-step-two::after {
+      border-right: 3px solid #fc635e;
+      border-left: 3px solid #fc635e; }
+  .progress__hexagon-step-three {
+    left: 223px;
+    top: 502px;
+    border-right: 1px solid #565656;
+    z-index: 3; }
+    .progress__hexagon-step-three::before {
+      border-left: 1px solid #565656;
+      border-right: 3px solid #fc635e; }
+    .progress__hexagon-step-three::after {
+      border-right: 1px solid #565656;
+      border-left: 3px solid #fc635e; }
+  .progress__hexagon-step-four {
+    left: 261px;
+    top: 677px;
+    z-index: 2; }
+    .progress__hexagon-step-four::before {
+      border-left: 1px solid #565656; } }
 
 .we-do {
   width: 100%;
@@ -1007,6 +1061,8 @@ button {
             align-items: center; }
   .advertising__item-wrap {
     margin-top: 115px; }
+  .advertising__title {
+    margin-bottom: 27px; }
   .advertising__item-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

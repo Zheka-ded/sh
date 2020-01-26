@@ -5,7 +5,7 @@ $main-color: #fc635e; // Основной цвет
 $main-text-color: #868686; // Основной цвет текста
 $main-subtitle-color: #adadad;
 $our-team-color: #565656; // Цвет текста в блоке our team
-$main-fonts: 'Merriweather Sans', sans-serif; // Основной шрифт
+$main-fonts: 'Muli', sans-serif; // Основной шрифт
 $hexagon-wrap-color: #fe8682;
 $bg-two: #f2f2f2;
 $red-btn-color: #f2f2f2;
@@ -16,8 +16,11 @@ $red-btn-color: #f2f2f2;
     // flex-direction: column;
     // align-items: center;
     width: 100%;
-    font-family: 'Expletus Sans', cursive;
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    // font-family: 'Expletus Sans', cursive;
+    // font-family: 'Merriweather Sans', sans-serif;
     background: url('../img/bg.png');
     background-size: cover;
 }
@@ -63,6 +66,7 @@ $red-btn-color: #f2f2f2;
     text-transform: uppercase;
     color: $main-text-color;
     text-align: center;
+    line-height: 1.25;
 
     span {
         color: $main-color;
@@ -178,7 +182,9 @@ $red-btn-color: #f2f2f2;
 .left-part{
     display: flex;
     flex-direction: column;
-    width: 45%;
+    // width: 45%;
+    width: 380px;
+    margin: 15px;
 
     &__title{
         color: $main-text-color;
@@ -194,7 +200,7 @@ $red-btn-color: #f2f2f2;
         color: $main-subtitle-color;
         font-family: $main-fonts;
         font-weight: 300;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 24px;
     }
 
@@ -218,6 +224,10 @@ $red-btn-color: #f2f2f2;
         font-family: $main-fonts;
     }
 
+    &__reverse{
+        align-items: flex-end;
+    }
+
 }
 
 
@@ -238,7 +248,9 @@ $red-btn-color: #f2f2f2;
 
 .right-part{
     display: flex;
-    width: 55%;
+    // width: 55%;
+    width: 500px;
+    margin: 15px;
     // flex-direction: row;
     // justify-content: flex-end;
     // height: 100%;

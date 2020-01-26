@@ -23,8 +23,8 @@
     }
 
     &__title{
-        margin-top: 207px;
-        letter-spacing: -1.5px;
+        margin-top: 140px;
+        letter-spacing: -1px;
         position: relative;
         // line-height: 60px;
         line-height: 1.4;
@@ -53,15 +53,15 @@
         // }
     }
 
-    &__subtitle{
-        margin-top: 15px;
-        margin-bottom: 48px;
-        position: relative;
-        opacity: 0.85;
-    }
+    // &__subtitle{
+    //     margin-top: 15px;
+    //     margin-bottom: 48px;
+    //     position: relative;
+    //     opacity: 0.85;
+    // }
 
     &__arrow-down{
-        margin-top: 240px;
+        margin-top: 140px;
         margin-bottom: 30px;
     }
 }

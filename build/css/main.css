@@ -376,15 +376,17 @@ button {
   display: flex;
   margin: 15px; }
 
+@media screen and (max-width: 980px) {
+  .two-part {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center; } }
+
 @media screen and (max-width: 638px) {
   .big__title-text {
     font-size: 30px; }
   .medium__title-text {
     font-size: 22px; }
-  .two-part {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-            justify-content: center; }
   .right-part {
     width: 300px; } }
 
@@ -963,31 +965,33 @@ button {
       border-right: 1px solid #565656;
       border-left: 3px solid #fc635e; }
   .progress__hexagon-step-four {
-    left: 161px;
-    top: 677px;
-    z-index: 2; }
+    left: 160px;
+    top: 675px;
+    z-index: 2;
+    border-left: 3px solid #fc635e;
+    border-right: 1px solid #565656; }
     .progress__hexagon-step-four::before {
-      border-left: 1px solid #565656; }
+      border-right: 1px solid #565656; }
     .progress__hexagon-step-four::after {
-      border-right: 1px solid #565656; } }
+      border-right: 1px solid #565656;
+      border-left: 3px solid #fc635e; } }
 
 @media screen and (max-width: 638px) {
   .progress__hexagon-step-three::before {
     border-right: 1px solid #565656; }
-  .progress__hexagon-step-three::after {
-    border-left: 1px solid #565656; }
   .progress__hexagon-step-four {
-    left: 91px;
-    top: 677px;
+    left: 32px;
+    top: 698px;
     width: 260px;
     height: 150px;
-    border-left: 3px solid #fc635e;
-    border-right: 1px solid #565656; }
+    border-right: 3px solid #fc635e;
+    border-left: 1px solid #565656; }
     .progress__hexagon-step-four::before {
-      border-left: 3px solid #fc635e;
-      border-right: 1px solid #565656; }
+      border-right: 3px solid #fc635e;
+      border-left: 1px solid #565656; }
     .progress__hexagon-step-four::after {
-      border-left: 3px solid #fc635e; } }
+      border-left: 1px solid #565656;
+      border-right: 3px solid #fc635e; } }
 
 .we-do {
   width: 100%;

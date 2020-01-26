@@ -50,16 +50,20 @@
                 }
             }
             &-step-four{
-                left: 161px;
-                top: 677px;
+                left: 160px;
+                top: 675px;
                 z-index: 2;
+                border-left: 3px solid $main-color;
+                border-right: 1px solid $our-team-color;
                 
                 &::before{
-                    border-left: 1px solid $our-team-color;
+                    // border-left: 1px solid $our-team-color;
+                    border-right: 1px solid $our-team-color;
                 }
     
                 &::after{
                     border-right: 1px solid $our-team-color;
+                    border-left: 3px solid $main-color;
                 }
                 
             }
@@ -74,32 +78,31 @@
     .progress{
     
         &__hexagon{
+
             &-step-three{
                 
                 &::before{
                     border-right: 1px solid $our-team-color;
                 }
-    
-                &::after{
-                    border-left: 1px solid $our-team-color;
-                }
+
             }
     
             &-step-four{
-                left: 91px;
-                top: 677px;
+                left: 32px;
+                top: 698px;
                 width: 260px;
                 height: 150px;
-                border-left: 3px solid $main-color;
-                border-right: 1px solid $our-team-color;
+                border-right: 3px solid $main-color;
+                border-left: 1px solid $our-team-color;
                 
                 &::before{
-                    border-left: 3px solid $main-color;
-                    border-right: 1px solid $our-team-color;
+                    border-right: 3px solid $main-color;
+                    border-left: 1px solid $our-team-color;
                 }
     
                 &::after{
-                    border-left: 3px solid $main-color;
+                    border-left: 1px solid $our-team-color;
+                    border-right: 3px solid $main-color;
                 }
             }
     

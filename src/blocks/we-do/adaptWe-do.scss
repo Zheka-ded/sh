@@ -1,0 +1,28 @@
+@media screen and (max-width: 980px) {
+
+    
+
+}
+
+
+@media screen and (max-width: 638px) {
+
+    .we-do{
+
+        &__wrap{
+            width: 90%;
+        }
+
+        &__macbook{
+            bottom: -50px;
+            left: -17px;
+        }
+
+        &__ipad{
+            bottom: -50px;
+            right: -15px;
+        }
+
+    }
+
+}

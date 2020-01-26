@@ -1,0 +1,21 @@
+@media screen and (max-width: 980px) {
+
+    
+
+}
+
+
+@media screen and (max-width: 638px) {
+
+    .expand{
+        &__wrap{
+            width: 95%;
+        }
+
+        &__title-text{
+            font-size: 18px;
+            margin: 20px 15px;
+        }
+    }
+
+}

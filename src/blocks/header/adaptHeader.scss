@@ -1,0 +1,20 @@
+@media screen and (max-width: 980px) {
+
+    
+
+}
+
+
+@media screen and (max-width: 638px) {
+
+    .header{
+        flex-direction: column;
+
+        &__nav{
+            flex-direction: column;
+            margin-top: 35px;
+        }
+
+    }
+
+}

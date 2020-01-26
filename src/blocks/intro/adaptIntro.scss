@@ -1,0 +1,19 @@
+@media screen and (max-width: 980px) {
+
+    
+
+}
+
+
+@media screen and (max-width: 638px) {
+
+    .intro{
+        &__wrap{
+        width: 90%;
+        }
+        &__title{
+            margin-top: 70px;
+        }
+    }
+
+}

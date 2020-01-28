@@ -3,7 +3,8 @@
     .progress{
 
         &__hexagons-wrap{
-            height: 900px;
+            height: 1000px;
+            transform: translateX(20px);
         }
     
         &__hexagon{

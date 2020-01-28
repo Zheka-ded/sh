@@ -11,14 +11,13 @@ html(lang="ru")
         link(rel="stylesheet", href="css/main.css")
     body.body
         .body__wrap
-
-            include ../blocks/intro/intro.pug
-            include ../blocks/what-can/what-can.pug
-            include ../blocks/expand/expand.pug
-            include ../blocks/progress/progress.pug
-            include ../blocks/we-do/we-do.pug
-            //- include ../blocks/advertising/advertising.pug
-            include ../blocks/reviews/reviews.pug
-            include ../blocks/form/form.pug
-    
-    script(src="./js/main.js")
+            section.intro.intro__thanks
+                .intro__wrap
+                    header.header
+                        a.header__logo-link.hexagon(href='index.html')
+                            p|A
+                            span.logo__span|AAT
+                        p.big__title-text.intro__title|
+                                    span|Ваша заявка успешно отправленна 
+                                    br
+                                    |мы с вами свяжемся.

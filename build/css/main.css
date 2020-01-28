@@ -218,11 +218,15 @@ button {
   font-weight: 300;
   text-align: center; }
 
+.medium__subtitle-wrap {
+  max-width: 548px; }
+
 .medium__subtitle-text {
   font-family: "Muli", sans-serif;
   text-align: center;
   color: #adadad;
-  font-size: 20px; }
+  font-size: 20px;
+  line-height: 1.2; }
 
 .small__subtitle-text {
   color: #adadad;
@@ -261,37 +265,6 @@ button {
   font-family: "Muli", sans-serif;
   font-size: 24px;
   font-weight: 300; }
-
-.arrow__down {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-  margin: 0 auto;
-  width: 28px;
-  height: 28px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  position: relative;
-  cursor: pointer; }
-
-.red__arrow {
-  background: #fc635e;
-  color: #fff; }
-
-.white__arrow {
-  background: #fff;
-  border: 1px solid #fc635e;
-  color: #fc635e; }
 
 .two-part {
   display: -webkit-box;
@@ -419,10 +392,14 @@ button {
     margin-top: 140px;
     letter-spacing: -1px;
     position: relative;
-    line-height: 1.4; }
+    line-height: 1.4;
+    margin-bottom: 120px; }
   .intro__arrow-down {
     margin-top: 140px;
     margin-bottom: 30px; }
+
+.intro__thanks {
+  height: 100vh; }
 
 @media screen and (max-width: 638px) {
   .intro__wrap {
@@ -605,7 +582,8 @@ button {
             flex-wrap: wrap;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
-            justify-content: center; }
+            justify-content: center;
+    margin-bottom: 60px; }
   .what-can__item {
     width: 200px;
     display: -webkit-box;
@@ -635,7 +613,7 @@ button {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
             justify-content: center;
-    margin-top: 110px;
+    margin-top: 100px;
     margin-bottom: 50px;
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease; }
@@ -661,6 +639,8 @@ button {
       transition: 0.3s all ease; }
     .what-can__hexagon-wrap:hover {
       background: #fc635e;
+      -webkit-transform: rotate(60deg);
+              transform: rotate(60deg);
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
     .what-can__hexagon-wrap:hover::before {
@@ -673,6 +653,8 @@ button {
       transition: 0.3s all ease; }
     .what-can__hexagon-wrap:hover .what-can__hexagon {
       background: #fff;
+      -webkit-transform: rotate(-60deg);
+              transform: rotate(-60deg);
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
     .what-can__hexagon-wrap:hover .what-can__hexagon::before {
@@ -773,7 +755,8 @@ button {
     border: 8px solid rgba(255, 255, 255, 0.3);
     padding-top: 80px;
     padding-bottom: 50px;
-    margin-top: 90px; }
+    margin-top: 90px;
+    margin-bottom: 90px; }
   .expand__title {
     line-height: 1.4; }
   .expand__btn-wrap {
@@ -872,16 +855,19 @@ button {
   .progress__hexagon-step-picture {
     position: absolute;
     left: -66px;
-    top: 226px; }
+    top: 226px;
+    background: #000; }
     .progress__hexagon-step-picture::before {
       content: '';
       position: absolute;
-      left: -1px; }
+      left: -1px;
+      background: #000; }
     .progress__hexagon-step-picture::after {
       content: '';
       left: -1px;
       position: absolute;
-      border-right: 3px solid #fc635e; }
+      border-right: 3px solid #fc635e;
+      background: #000; }
   .progress__hexagon-step-two {
     position: absolute;
     left: 148px;
@@ -930,6 +916,7 @@ button {
   width: 100%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  opacity: 0.5;
   top: 50%;
   z-index: 1; }
 
@@ -939,7 +926,9 @@ button {
 
 @media screen and (max-width: 980px) {
   .progress__hexagons-wrap {
-    height: 900px; }
+    height: 1000px;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px); }
   .progress__hexagon-step-one {
     left: 40px;
     top: -48px; }
@@ -1020,7 +1009,8 @@ button {
             flex-direction: column;
     -webkit-box-align: center;
     -webkit-align-items: center;
-            align-items: center; }
+            align-items: center;
+    padding-bottom: 70px; }
   .we-do__title-wrap {
     margin-top: 60px; }
   .we-do__title {
@@ -1165,3 +1155,83 @@ button {
       height: 144px; }
   .advertising__macbook img {
     width: 100%; } }
+
+.reviews {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 60px auto; }
+  .reviews__wrap {
+    width: 75%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center; }
+  .reviews__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    width: 100%; }
+  .reviews__description-wrap {
+    width: 300px;
+    color: #adadad;
+    font-family: "Muli", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8; }
+  .reviews__happy-user-wrap {
+    width: 160px;
+    height: 185px; }
+  .reviews__happy-user {
+    width: 100%;
+    height: 100%; }
+  .reviews__name-user-wrap {
+    width: 300px; }
+  .reviews__name-user {
+    text-align: center;
+    font-family: "Muli", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fc635e; }
+    .reviews__name-user span {
+      color: #565656; }
+  .reviews__arrows {
+    margin-top: 50px; }
+  .reviews__arrow-btn {
+    border: none;
+    background: none;
+    margin: 15px; }
+  .reviews__arrow {
+    fill: #fc635e; }
+  .reviews__arrow-right {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+.push {
+  fill: #868686; }

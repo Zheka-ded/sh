@@ -17,6 +17,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 60px;
     }
 
     &__item{
@@ -37,7 +38,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 110px;
+        margin-top: 100px;
         margin-bottom: 50px;
         transition: 0.3s all ease;
 
@@ -62,6 +63,7 @@
 
         &:hover {
             background: $main-color;
+            transform: rotate(60deg);
             transition: 0.3s all ease;
         }
 
@@ -77,6 +79,7 @@
 
         &:hover .what-can__hexagon{
             background: $white-tetx-color;
+            transform: rotate(-60deg);
             transition: 0.3s all ease;
         }
 

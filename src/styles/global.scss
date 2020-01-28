@@ -102,11 +102,16 @@ $red-btn-color: #f2f2f2;
     text-align: center;
 }
 
+.medium__subtitle-wrap{
+    max-width: 548px;
+}
+
 .medium__subtitle-text{
     font-family: $main-fonts;
     text-align: center;
     color: $main-subtitle-color;
     font-size: 20px;
+    line-height: 1.2;
 }
 
 .small__subtitle-text{
@@ -147,28 +152,28 @@ $red-btn-color: #f2f2f2;
     font-weight: 300;
 }
 
-.arrow__down{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    position: relative;
-    cursor: pointer;
-}
+// .arrow__down{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     margin: 0 auto;
+//     width: 28px;
+//     height: 28px;
+//     border-radius: 50%;
+//     position: relative;
+//     cursor: pointer;
+// }
 
-.red__arrow{
-    background: $main-color;
-    color: $white-tetx-color;
-}
-.white__arrow{
-    background: $white-tetx-color;
-    border: 1px solid $main-color;
-    color: $main-color;
-}
+// .red__arrow{
+//     background: $main-color;
+//     color: $white-tetx-color;
+// }
+// .white__arrow{
+//     background: $white-tetx-color;
+//     border: 1px solid $main-color;
+//     color: $main-color;
+// }
 
 .two-part{
     display: flex;

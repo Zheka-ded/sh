@@ -1,4 +1,3 @@
-
 // Happy users array
 let userArr = [
     {'name': ['Alan', 'Richman'], 'photo': 'user_1.png', 'description': 'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis '},

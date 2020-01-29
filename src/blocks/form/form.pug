@@ -1,8 +1,9 @@
-form(action="mail.php", method="post")
+//- form(action="mail.php", method="post")
+form.form
     label|Имя
         input(type="text" name="user_name" placeholder="Имя пиши")
     label|почта
-        input(type="text" name="user_mail" placeholder="почта пиши")
+        input(type="text" name="user_email" placeholder="почта пиши")
     label|номер
         input(type="text" name="user_phone" placeholder="номер пиши")
-    button(type="submit")|GO mf! 
+    button(type="submit" name="send_form")|GO mf! 

@@ -28,11 +28,13 @@
         font-size: 15px;
         font-weight: 300;
         line-height: 1.8;
+        margin: 15px;
     }
 
     &__happy-user-wrap{
         width: 160px;
         height: 185px;
+        margin: 15px;
     }
 
     &__happy-user{
@@ -42,6 +44,7 @@
 
     &__name-user-wrap{
         width: 300px;
+        margin: 15px;
     }
 
     &__name-user{
@@ -77,3 +80,5 @@
 .push{
     fill: #868686;
 }
+
+@import './adaptReview.scss';

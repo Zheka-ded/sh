@@ -926,9 +926,7 @@ button {
 
 @media screen and (max-width: 980px) {
   .progress__hexagons-wrap {
-    height: 1000px;
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px); }
+    height: 1000px; }
   .progress__hexagon-step-one {
     left: 40px;
     top: -48px; }
@@ -1204,15 +1202,18 @@ button {
     font-family: "Muli", sans-serif;
     font-size: 15px;
     font-weight: 300;
-    line-height: 1.8; }
+    line-height: 1.8;
+    margin: 15px; }
   .reviews__happy-user-wrap {
     width: 160px;
-    height: 185px; }
+    height: 185px;
+    margin: 15px; }
   .reviews__happy-user {
     width: 100%;
     height: 100%; }
   .reviews__name-user-wrap {
-    width: 300px; }
+    width: 300px;
+    margin: 15px; }
   .reviews__name-user {
     text-align: center;
     font-family: "Muli", sans-serif;
@@ -1235,3 +1236,9 @@ button {
 
 .push {
   fill: #868686; }
+
+@media screen and (max-width: 980px) {
+  .reviews__item {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center; } }

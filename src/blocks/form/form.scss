@@ -1,0 +1,53 @@
+.form{
+    width: 100%;
+    display: flex;;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    background: $bg-two;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    label{
+        margin: 10px 15px;
+        font-family: "Muli", sans-serif;
+        line-height: 1.5;
+        color: $our-team-color;
+        font-weight: 600;
+    }
+    &__input{
+        width: 250px;
+        height: 38px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        border: 1.5px solid $main-subtitle-color;
+        padding: 0 5px;
+
+        &::placeholder{
+            font-size: 13px;
+        }
+
+        &:focus{
+            outline: none;
+            border: 1.5px solid $primary;
+        }
+
+    }
+
+
+    &__btn{
+        cursor: pointer;
+        display: flex;
+        width: max-content;
+        background: $main-color;
+        border-radius: 5px;
+        padding: 9px 11px;
+        border: none;
+        color: $red-btn-color;
+        font-size: 18px;
+        font-family: "Muli", sans-serif;
+        margin: 10px 15px;
+    }
+}

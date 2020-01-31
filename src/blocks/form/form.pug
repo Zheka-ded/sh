@@ -1,9 +1,11 @@
 //- form(action="mail.php", method="post")
 form.form
-    label|Имя
-        input(type="text" name="user_name" placeholder="Имя пиши")
-    label|почта
-        input(type="text" name="user_email" placeholder="почта пиши")
-    label|номер
-        input(type="text" name="user_phone" placeholder="номер пиши")
-    button(type="submit" name="send_form")|GO mf! 
+    label|Ваше имя
+        input(class="form__input form__name" type="text" name="user_name" placeholder="Ваше имя")
+    label|Ваша почта
+        input(class="form__input form__email" type="email" name="user_email" placeholder="Ваш E-mail")
+    label|Ваш номер телефона
+        input(class="form__input form__phone" type="number" name="user_phone" placeholder="+9(999)999-99-99")
+    .form__btn-wrap
+        button(class="form__btn" type="submit" name="send_form" value="Зарегестрироваться на курс")|Зарегестрироваться на курс
+    //- input(class="form__btn" type="submit" name="send_form" value="Зарегестрироваться на курс")

@@ -174,16 +174,18 @@
         </div>
       </section>
       <form class="form">
-        <label>Имя
-          <input type="text" name="user_name" placeholder="Имя пиши"/>
+        <label>Ваше имя
+          <input class="form__input form__name" type="text" name="user_name" placeholder="Ваше имя"/>
         </label>
-        <label>почта
-          <input type="text" name="user_email" placeholder="почта пиши"/>
+        <label>Ваша почта
+          <input class="form__input form__email" type="email" name="user_email" placeholder="Ваш E-mail"/>
         </label>
-        <label>номер
-          <input type="text" name="user_phone" placeholder="номер пиши"/>
+        <label>Ваш номер телефона
+          <input class="form__input form__phone" type="number" name="user_phone" placeholder="+9(999)999-99-99"/>
         </label>
-        <button type="submit" name="send_form">GO mf! </button>
+        <div class="form__btn-wrap">
+          <button class="form__btn" type="submit" name="send_form" value="Зарегестрироваться на курс">Зарегестрироваться на курс</button>
+        </div>
       </form>
     </div>
   </body>

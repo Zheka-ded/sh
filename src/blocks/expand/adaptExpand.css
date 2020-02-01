@@ -1,0 +1,10 @@
+@media screen and (max-width: 638px) {
+  .expand__wrap {
+    width: 95%;
+  }
+  .expand__title-text {
+    font-size: 18px;
+    margin: 20px 15px;
+  }
+}
+/*# sourceMappingURL=adaptExpand.css.map */

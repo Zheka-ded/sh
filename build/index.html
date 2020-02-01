@@ -174,20 +174,31 @@
         </div>
       </section>
       <form class="form">
-        <label>Ваше имя
-          <input class="form__input form__name" type="text" name="user_name" placeholder="Ваше имя"/>
-        </label>
-        <label>Ваша почта
-          <input class="form__input form__email" type="email" name="user_email" placeholder="Ваш E-mail"/>
-        </label>
-        <label>Ваш номер телефона
-          <input class="form__input form__phone" type="number" name="user_phone" placeholder="+9(999)999-99-99"/>
-        </label>
+        <div class="form__input-wrap form__name-wrap">
+          <label>Ваше имя
+            <input class="form__input form__name" type="text" name="user_name" placeholder="Ваше имя"/>
+          </label>
+        </div>
+        <div class="form__input-wrap form__email-wrap">
+          <label>Ваша почта
+            <input class="form__input form__email" type="email" name="user_email" placeholder="Ваш E-mail"/>
+          </label>
+        </div>
+        <div class="form__input-wrap form__phone-wrap">
+          <div class="form__phone-flag">
+            <ul></ul>
+          </div><span class="form__flag-span"></span>
+          <label>Ваш номер телефона
+            <input class="form__input form__phone" type="text" name="user_phone" placeholder="Ваш номер телефона"/>
+          </label>
+        </div>
         <div class="form__btn-wrap">
           <button class="form__btn" type="submit" name="send_form" value="Зарегестрироваться на курс">Зарегестрироваться на курс</button>
         </div>
       </form>
     </div>
   </body>
+  <script src="./js/reviews.js"></script>
+  <script src="./js/form.js"></script>
   <script src="./js/main.js"></script>
 </html>

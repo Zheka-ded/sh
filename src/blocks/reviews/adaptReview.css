@@ -1,0 +1,8 @@
+@media screen and (max-width: 980px) {
+  .reviews__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=adaptReview.css.map */

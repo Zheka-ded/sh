@@ -1,0 +1,9 @@
+@media screen and (max-width: 638px) {
+  .intro__wrap {
+    width: 90%;
+  }
+  .intro__title {
+    margin-top: 70px;
+  }
+}
+/*# sourceMappingURL=adaptIntro.css.map */

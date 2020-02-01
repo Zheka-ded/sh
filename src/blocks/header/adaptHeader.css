@@ -1,0 +1,19 @@
+@media screen and (max-width: 638px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 35px;
+  }
+  .header__nav-link {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=adaptHeader.css.map */

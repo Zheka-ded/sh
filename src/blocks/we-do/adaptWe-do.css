@@ -1,0 +1,26 @@
+@media screen and (max-width: 638px) {
+  .we-do__item-right {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .we-do__wrap {
+    width: 100%;
+  }
+  .we-do__thunderbolt img {
+    width: 100%;
+  }
+  .we-do__thunderbolt::before {
+    width: 276px;
+    height: 155px;
+  }
+  .we-do__macbook {
+    bottom: -60px;
+    left: -37px;
+  }
+  .we-do__ipad {
+    bottom: -90px;
+    right: -25px;
+  }
+}
+/*# sourceMappingURL=adaptWe-do.css.map */

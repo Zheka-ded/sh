@@ -1,0 +1,20 @@
+@media screen and (max-width: 638px) {
+  .advertising__wrap {
+    width: 90%;
+  }
+  .advertising__macbook {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .advertising__macbook::before {
+    right: 37px;
+    top: 11px;
+    width: 226px;
+    height: 144px;
+  }
+  .advertising__macbook img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=adaptAdvertising.css.map */

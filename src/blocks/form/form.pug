@@ -1,11 +1,19 @@
 //- form(action="mail.php", method="post")
 form.form
-    label|Ваше имя
-        input(class="form__input form__name" type="text" name="user_name" placeholder="Ваше имя")
-    label|Ваша почта
-        input(class="form__input form__email" type="email" name="user_email" placeholder="Ваш E-mail")
-    label|Ваш номер телефона
-        input(class="form__input form__phone" type="number" name="user_phone" placeholder="+9(999)999-99-99")
+    .form__input-wrap.form__name-wrap
+        label|Ваше имя
+            input(class="form__input form__name" type="text" name="user_name" placeholder="Ваше имя")
+    
+    .form__input-wrap.form__email-wrap
+        label|Ваша почта
+            input(class="form__input form__email" type="email" name="user_email" placeholder="Ваш E-mail")
+    
+    .form__input-wrap.form__phone-wrap
+        .form__phone-flag
+            ul
+        span.form__flag-span
+        label|Ваш номер телефона
+            input(class="form__input form__phone" type="text" name="user_phone" placeholder="Ваш номер телефона")
     .form__btn-wrap
         button(class="form__btn" type="submit" name="send_form" value="Зарегестрироваться на курс")|Зарегестрироваться на курс
     //- input(class="form__btn" type="submit" name="send_form" value="Зарегестрироваться на курс")

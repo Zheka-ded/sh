@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     sass = require('gulp-sass'),
     pug = require('gulp-pug'),
-    concat = require("gulp-concat"),
+    // concat = require("gulp-concat"),
     rename = require("gulp-rename"),
     imagemin = require('gulp-imagemin'),
     plumber = require('gulp-plumber');
@@ -84,8 +84,8 @@ gulp.task('styles', function () {
 gulp.task('scripts', function () {
     return gulp.src(paths.js.src)
         .pipe(plumber())
-        .pipe(concat('scripts.js'))
-        .pipe(concat('main.js'))
+        // .pipe(concat('scripts.js'))
+        // .pipe(concat('main.js'))
         .pipe(gulp.dest(paths.js.dest))
         .pipe(browserSync.reload({
             stream: true

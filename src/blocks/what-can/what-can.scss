@@ -93,8 +93,8 @@
             transition: 0.3s all ease;
         }
 
-        &:hover .what-can__svg{
-            fill: $main-color;
+        &:hover .what-can__icon{
+            color: $main-color;
             transition: 0.3s all ease;
         }
         
@@ -141,9 +141,9 @@
         align-items: center;
     }
 
-    &__svg{
-        fill: #fff;
-        width: 30px;
+    &__icon{
+        color: #fff;
+        font-size: 30px;
         transition: 0.3s all ease;
         z-index: 2;
     }

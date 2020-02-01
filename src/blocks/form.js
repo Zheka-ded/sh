@@ -8,6 +8,7 @@ const FORM_USER_EMAIL_CSS = 'user_email';
 const formUserEmail = document.querySelector(`[name="${FORM_USER_EMAIL_CSS}"]`);
 
 const FORM_PHONE_FLAG_CSS = '.form__phone-flag';
+const formPhoneFlag = document.querySelector(FORM_PHONE_FLAG_CSS);
 const countriesListWrap = document.querySelector(`${FORM_PHONE_FLAG_CSS} ul`);
 
 const FORM_FLAG_SPAN_CSS = '.form__flag-span';
@@ -32,39 +33,37 @@ const allCountriesArr = {
     'KAZ':{'name':'Қазақстан', 'tel_code': '+7', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/160px-Flag_of_Kazakhstan.svg.png'}
 }
 
-let r = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
 
-formSend.onclick = function checkFormFunc (event) {
+formSend.onclick = function (event) {
     event.preventDefault();
+
+    let checkEmail = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
     
     if (formUserName.value.trim() != '' && formUserEmail.value.trim() != '' && formUserPhone.value.trim() != '') {
-        if (!r.test(formUserEmail.value.trim())) {
-            alert('Веден не верный адрес почты');
-        } else{
+        if (checkEmail.test(formUserEmail.value.trim())) {
             sendFormFunc()
+        } else{
+            alert('Веден не верный адрес почты');
         }
     } else {
         alert('Заполните все поля');
     }
 }
 
-// FORM_SEND.onclick = checkFormFunc;
-// // FORM_SEND.ontouchstart = checkFormFunc;
-// FORM_SEND.addEventListener('touchstart', checkFormFunc);
-// FORM_SEND.addEventListener('click', checkFormFunc);
-
-function sendFormFunc() {
+// Отправка формы
+function sendFormFunc () {
     fetch('mail.php', {
         'method': 'POST',
         'headers': {
             'Content-Type': 'application/x-www-form-urlencoded',
         },
         'body': `user_name=${formUserName.value.trim()}&user_email=${formUserEmail.value.trim()}&user_phone=${formUserPhone.value.trim()}`
+        
     })
     .then(function () {window.location.href = 'thanks.html'})
 }
 
-
+// Заполнение спаска странами
 function fillCountriesList (arr) {
     for(let key in arr){
         let li = document.createElement('li');
@@ -81,32 +80,31 @@ function fillCountriesList (arr) {
 }
 fillCountriesList(allCountriesArr);
 
+// Выбор страны
 function selCountryFunk () {
     let countriesList = document.querySelectorAll(`${FORM_PHONE_FLAG_CSS} ul li`);
-
-    
-    console.log(countriesList)
-    // console.log(countriesList[0].getAttribute('url_flag'))
-
-    
+    // Стартовое заполнение поля
         formFlagSpan.style.backgroundImage = `url('${countriesList[0].getAttribute('url-flag')}')`;
         formUserPhone.value = countriesList[0].getAttribute('data-code');
         
+    // Выбор страны из списка
     for(i = 0; i < countriesList.length; i++) {
-
-
         countriesList[i].onclick = function () {
-            console.log(this.getAttribute('data-key'))
-            console.log(this.getAttribute('data-code'))
-            console.log(this.getAttribute('url-flag'))
             formFlagSpan.style.backgroundImage = `url('${this.getAttribute('url-flag')}')`;
             formUserPhone.value = this.getAttribute('data-code');
-            document.querySelector('.form__phone-flag').classList.remove('phone-flag-active');
+            formPhoneFlag.classList.remove('phone-flag-active');
         }
     }
 }
 selCountryFunk()
 
-formFlagSpan.onclick = function () {
-    document.querySelector('.form__phone-flag').classList.add('phone-flag-active');
+// Открытие меню стран
+formFlagSpan.onclick = (event) => {
+    event.stopPropagation();
+    formPhoneFlag.classList.add('phone-flag-active');
+}
+
+// Закрытие меню нажатием в любой части экрана
+document.onclick = function () {
+    if (formPhoneFlag.classList.contains('phone-flag-active')) formPhoneFlag.classList.remove('phone-flag-active');
 }

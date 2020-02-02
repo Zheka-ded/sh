@@ -134,8 +134,7 @@ button {
   font-family: 'Ubuntu', sans-serif;
   font-family: 'Muli', sans-serif;
   font-family: 'Roboto', sans-serif;
-  background: url("../img/bg.png");
-  background-size: cover; }
+  background: url("../img/bg.png"); }
 
 .body__wrap {
   display: -webkit-box;
@@ -360,8 +359,19 @@ button {
     font-size: 30px; }
   .medium__title-text {
     font-size: 22px; }
+  .left-part__title {
+    font-size: 20px; }
   .right-part {
-    width: 300px; } }
+    width: 300px;
+    margin: 5px; } }
+
+@media screen and (max-width: 380px) {
+  .big__title-text {
+    font-size: 24px; }
+  .medium__title-text {
+    font-size: 18px; }
+  .medium__subtitle-text {
+    font-size: 15px; } }
 
 .intro {
   display: -webkit-box;
@@ -544,6 +554,23 @@ button {
       margin-top: 35px; }
     .header__nav-link {
       font-size: 14px; } }
+
+@media screen and (max-width: 380px) {
+  .header {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center; }
+    .header__logo-link {
+      -webkit-transform: translate(-50%);
+              transform: translate(-50%); }
+    .header__nav {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      margin-top: 40px; }
+    .header__nav-link {
+      font-size: 11.5px; } }
 
 .what-can {
   width: 100%;
@@ -798,223 +825,235 @@ button {
     font-size: 18px;
     margin: 20px 15px; } }
 
-.progress__title-wrap {
-  margin-top: 65px; }
+@media screen and (max-width: 380px) {
+  .expand__title-text {
+    font-size: 15px; } }
 
-.progress__hexagons-wrap {
+.progress {
+  width: 75%;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
+  -webkit-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
-          align-items: center;
-  height: 500px;
-  position: relative;
-  margin: 150px 0px 0px 0px; }
-
-.progress__text-wrap {
-  width: 90%;
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 30%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-
-.progress__icon-wrap {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-  width: 40px;
-  height: 40px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background: #fc635e;
-  position: absolute;
-  border: 2px solid #fc635e;
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease; }
-  .progress__icon-wrap-one {
-    left: -27px;
-    top: -14px; }
-  .progress__icon-wrap-two {
-    left: -27px;
-    top: -14px; }
-  .progress__icon-wrap-three {
-    left: -27px;
-    top: 0px; }
-  .progress__icon-wrap-three-one {
-    left: 143px;
-    top: 100px; }
-  .progress__icon-wrap-four {
-    left: 98px;
-    top: -108px; }
-  .progress__icon-wrap-four-one {
-    left: 74px;
-    top: 170px;
-    width: 100px;
-    height: 100px; }
-    .progress__icon-wrap-four-one i {
-      font-size: 70px; }
-
-.progress__icon {
-  color: #fff;
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease; }
-  .progress__icon-one {
-    -webkit-transform: translate(1.5px, -1px);
-            transform: translate(1.5px, -1px); }
-
-.progress__hexagon {
-  position: relative;
-  width: 167px;
-  height: 98px;
-  background: #fff;
-  border-left: 1px solid #565656;
-  border-right: 1px solid #565656; }
-  .progress__hexagon:hover .hooli {
-    color: #fc635e;
-    -webkit-transition: 0.3s all ease;
-    transition: 0.3s all ease; }
-  .progress__hexagon:hover .progress__icon {
-    color: #fc635e;
-    -webkit-transition: 0.3s all ease;
-    transition: 0.3s all ease; }
-  .progress__hexagon:hover .progress__icon-wrap {
-    border: 2px solid #fc635e;
-    background: #fff;
-    -webkit-transition: 0.3s all ease;
-    transition: 0.3s all ease; }
-  .progress__hexagon:hover .progress__hexagon-subtitle {
-    color: #fc635e;
-    text-shadow: 0px 1px 3px #adadad;
-    -webkit-transition: 0.3s all ease;
-    transition: 0.3s all ease; }
-  .progress__hexagon__title-wrap {
-    margin: 0px auto 10px;
-    padding: 0px 0px 5px 0px; }
-  .progress__hexagon::before, .progress__hexagon::after {
-    content: '';
+          align-items: center; }
+  .progress__title-wrap {
+    margin-top: 65px; }
+  .progress__hexagons-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    height: 500px;
+    position: relative;
+    margin: 150px 0px 0px 0px; }
+  .progress__text-wrap {
+    width: 90%;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -2px;
+    z-index: 1;
+    left: 50%;
+    top: 30%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .progress__icon-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: #fc635e;
+    position: absolute;
+    border: 2px solid #fc635e;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
+    .progress__icon-wrap-one {
+      left: -27px;
+      top: -14px; }
+    .progress__icon-wrap-two {
+      left: -27px;
+      top: -14px; }
+    .progress__icon-wrap-three {
+      left: -30px;
+      top: 0px; }
+    .progress__icon-wrap-three-one {
+      left: 143px;
+      top: 100px; }
+    .progress__icon-wrap-four {
+      left: 98px;
+      top: -108px; }
+    .progress__icon-wrap-four-one {
+      left: 74px;
+      top: 170px;
+      width: 100px;
+      height: 100px; }
+      .progress__icon-wrap-four-one i {
+        font-size: 70px; }
+  .progress__icon {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease; }
+    .progress__icon-one {
+      -webkit-transform: translate(1.5px, -1px);
+              transform: translate(1.5px, -1px); }
+  .progress__hexagon {
+    position: relative;
+    width: 168px;
+    height: 98px;
     background: #fff;
     border-left: 1px solid #565656;
     border-right: 1px solid #565656; }
-  .progress__hexagon::before {
-    -webkit-transform: rotate(60deg);
-            transform: rotate(60deg); }
-  .progress__hexagon::after {
-    -webkit-transform: rotate(-60deg);
-            transform: rotate(-60deg); }
-  .progress__hexagon-step-one {
-    position: absolute;
-    left: -103px;
-    top: 52px;
-    border-right: 3px solid #fc635e;
-    z-index: 2; }
-    .progress__hexagon-step-one::before {
+    .progress__hexagon:hover .hooli {
+      color: #fc635e;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+    .progress__hexagon:hover .progress__icon {
+      color: #fc635e;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+    .progress__hexagon:hover .progress__icon-wrap {
+      border: 2px solid #fc635e;
+      background: #fff;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+    .progress__hexagon:hover .progress__hexagon-subtitle {
+      color: #fc635e;
+      text-shadow: 0px 1px 3px #adadad;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+    .progress__hexagon__title-wrap {
+      margin: 0px auto 10px;
+      padding: 0px 0px 5px 0px; }
+    .progress__hexagon::before, .progress__hexagon::after {
       content: '';
       position: absolute;
-      border-left: 3px solid #fc635e; }
-    .progress__hexagon-step-one::after {
-      content: '';
-      position: absolute;
-      border-right: 3px solid #fc635e; }
-  .progress__hexagon-step-picture {
-    position: absolute;
-    left: -66px;
-    top: 226px;
-    background: #000; }
-    .progress__hexagon-step-picture::before {
-      content: '';
-      position: absolute;
-      left: -1px;
-      background: #000; }
-    .progress__hexagon-step-picture::after {
-      content: '';
-      left: -1px;
-      position: absolute;
-      border-right: 3px solid #fc635e;
-      background: #000; }
-  .progress__hexagon-step-two {
-    position: absolute;
-    left: 148px;
-    top: 102px;
-    border-left: 3px solid #fc635e; }
-    .progress__hexagon-step-two::before {
-      content: '';
-      position: absolute;
-      border-left: 3px solid #fc635e; }
-    .progress__hexagon-step-two::after {
-      content: '';
-      position: absolute; }
-  .progress__hexagon-step-three {
-    position: absolute;
-    left: 232px;
-    top: -44px;
-    border-right: 3px solid #fc635e;
-    border-left: 3px solid #fc635e; }
-    .progress__hexagon-step-three::before {
-      content: '';
-      position: absolute;
-      border-left: 3px solid #fc635e; }
-    .progress__hexagon-step-three::after {
-      content: '';
-      position: absolute;
-      border-right: 3px solid #fc635e; }
-  .progress__hexagon-step-four {
-    position: absolute;
-    left: 403px;
-    top: 55px;
-    border-right: 3px solid #fc635e; }
-    .progress__hexagon-step-four::before {
-      content: '';
+      width: 100%;
+      height: 100%;
       left: -2px;
+      background: #fff;
+      border-left: 1px solid #565656;
+      border-right: 1px solid #565656; }
+    .progress__hexagon::before {
+      -webkit-transform: rotate(60deg);
+              transform: rotate(60deg); }
+    .progress__hexagon::after {
+      -webkit-transform: rotate(-60deg);
+              transform: rotate(-60deg); }
+    .progress__hexagon-step-one {
       position: absolute;
-      border-left: 3px solid #fc635e;
-      border-right: 3px solid #fc635e; }
-    .progress__hexagon-step-four::after {
-      content: '';
-      left: -1px;
+      left: -103px;
+      top: 52px;
+      border-right: 3px solid #fc635e;
+      z-index: 2; }
+      .progress__hexagon-step-one::before {
+        content: '';
+        position: absolute;
+        border-left: 3px solid #fc635e; }
+      .progress__hexagon-step-one::after {
+        content: '';
+        position: absolute;
+        border-right: 3px solid #fc635e; }
+    .progress__hexagon-step-picture {
       position: absolute;
+      left: -66px;
+      top: 226px;
+      background: #000; }
+      .progress__hexagon-step-picture::before {
+        content: '';
+        position: absolute;
+        left: -1px;
+        background: #000; }
+      .progress__hexagon-step-picture::after {
+        content: '';
+        left: -1px;
+        position: absolute;
+        border-right: 3px solid #fc635e;
+        background: #000; }
+    .progress__hexagon-step-two {
+      position: absolute;
+      left: 148px;
+      top: 102px;
+      border-left: 3px solid #fc635e; }
+      .progress__hexagon-step-two::before {
+        content: '';
+        position: absolute;
+        border-left: 3px solid #fc635e; }
+      .progress__hexagon-step-two::after {
+        content: '';
+        position: absolute; }
+    .progress__hexagon-step-three {
+      position: absolute;
+      left: 232px;
+      top: -44px;
+      border-right: 3px solid #fc635e;
+      border-left: 3px solid #fc635e; }
+      .progress__hexagon-step-three::before {
+        content: '';
+        position: absolute;
+        border-left: 3px solid #fc635e; }
+      .progress__hexagon-step-three::after {
+        content: '';
+        position: absolute;
+        border-right: 3px solid #fc635e; }
+    .progress__hexagon-step-four {
+      position: absolute;
+      left: 403px;
+      top: 55px;
       border-right: 3px solid #fc635e; }
-
-.progress__img {
-  position: absolute;
-  width: 100%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  opacity: 0.5;
-  top: 50%;
-  z-index: 1; }
+      .progress__hexagon-step-four::before {
+        content: '';
+        left: -2px;
+        position: absolute;
+        border-left: 3px solid #fc635e;
+        border-right: 3px solid #fc635e; }
+      .progress__hexagon-step-four::after {
+        content: '';
+        left: -1px;
+        position: absolute;
+        border-right: 3px solid #fc635e; }
+  .progress__img {
+    position: absolute;
+    width: 100%;
+    -webkit-transform: translateY(-50.5%);
+            transform: translateY(-50.5%);
+    opacity: 0.5;
+    top: 50%;
+    z-index: 1; }
 
 .big__hexagon {
   width: 262px;
   height: 153px; }
+  .big__hexagon::before, .big__hexagon::after {
+    height: 99%; }
 
 .hooli {
   position: absolute;
@@ -1040,6 +1079,7 @@ button {
     left: 38px;
     top: 356px; }
     .progress__hexagon-step-two::after {
+      width: 99%;
       border-right: 3px solid #fc635e;
       border-left: 3px solid #fc635e; }
   .progress__hexagon-step-three {
@@ -1063,7 +1103,13 @@ button {
       border-right: 1px solid #565656; }
     .progress__hexagon-step-four::after {
       border-right: 1px solid #565656;
-      border-left: 3px solid #fc635e; } }
+      border-left: 3px solid #fc635e; }
+  .progress__icon-wrap-three-one {
+    left: 135px;
+    top: 0px; }
+  .progress__icon-wrap-four {
+    left: 148px;
+    top: -83px; } }
 
 @media screen and (max-width: 638px) {
   .progress__hexagon-step-three::before {
@@ -1071,8 +1117,6 @@ button {
   .progress__hexagon-step-four {
     left: 32px;
     top: 698px;
-    width: 260px;
-    height: 150px;
     border-right: 3px solid #fc635e;
     border-left: 1px solid #565656; }
     .progress__hexagon-step-four::before {
@@ -1081,6 +1125,25 @@ button {
     .progress__hexagon-step-four::after {
       border-left: 1px solid #565656;
       border-right: 3px solid #fc635e; } }
+
+@media screen and (max-width: 410px) {
+  .progress__hexagon-step-one {
+    left: 15px; }
+    .progress__hexagon-step-one::before {
+      border-right: 3px solid #fc635e; }
+  .progress__hexagon-step-picture {
+    left: -6px;
+    top: 160px; }
+  .progress__hexagon-step-two {
+    left: -7px;
+    top: 411px; }
+  .progress__hexagon-step-three {
+    left: 76px;
+    top: 560px;
+    z-index: 2; }
+  .progress__hexagon-step-four {
+    left: -20px;
+    top: 754px; } }
 
 .we-do {
   width: 100%;
@@ -1182,11 +1245,9 @@ button {
     width: 276px;
     height: 155px; }
   .we-do__macbook {
-    bottom: -60px;
-    left: -37px; }
+    display: none; }
   .we-do__ipad {
-    bottom: -90px;
-    right: -25px; } }
+    display: none; } }
 
 .advertising {
   width: 100%;
@@ -1661,7 +1722,9 @@ button {
     -webkit-align-items: center;
             align-items: center;
     text-decoration: none;
-    font-family: "Muli", sans-serif; }
+    font-family: "Muli", sans-serif;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%); }
     .footer__logo-link p {
       z-index: 1; }
 
@@ -1669,9 +1732,7 @@ button {
   width: 59px;
   height: 34px;
   background: #fc635e;
-  position: relative;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%); }
+  position: relative; }
   .hexagon::before, .hexagon::after {
     content: "";
     position: absolute;

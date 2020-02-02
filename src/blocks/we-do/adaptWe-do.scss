@@ -33,15 +33,58 @@
         }
 
         &__macbook{
-            bottom: -60px;
-            left: -37px;
+            display: none;
         }
 
         &__ipad{
-            bottom: -90px;
-            right: -25px;
+            display: none;
         }
 
     }
 
 }
+
+
+
+// @media screen and (max-width: 638px) {
+
+//     .we-do{
+
+//         &__item-right{
+//             align-items: center;
+//         }
+
+//         &__wrap{
+//             width: 100%;
+//         }
+
+//         &__thunderbolt img{
+//             width: 100%;
+//             // background-position: center;
+//             // background-size: contain;
+//         }
+
+//         &__thunderbolt{
+
+//             &::before{
+//                 width: 276px;
+//                 height: 155px;
+
+//             }
+//         }
+
+//         &__macbook{
+//             display: none;
+//             // bottom: -60px;
+//             // left: -37px;
+//         }
+
+//         &__ipad{
+//             display: none;
+//             // bottom: -90px;
+//             // right: -25px;
+//         }
+
+//     }
+
+// }

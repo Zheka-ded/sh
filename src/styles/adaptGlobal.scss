@@ -17,9 +17,31 @@
         font-size: 22px;
     }
 
+    .left-part__title{
+        font-size: 20px;
+    }
 
     .right-part{
         width: 300px;
+        margin: 5px;
     }
+
+}
+
+
+@media screen and (max-width: 380px) {
+
+    .big__title-text{
+        font-size: 24px;
+    }
+
+    .medium__title-text{
+        font-size: 18px;
+    }
+
+    .medium__subtitle-text{
+        font-size: 15px;
+    }
+
 
 }

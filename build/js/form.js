@@ -10,6 +10,7 @@ const formUserEmail = document.querySelector(`[name="${FORM_USER_EMAIL_CSS}"]`);
 const FORM_PHONE_FLAG_CSS = '.form__phone-flag';
 const formPhoneFlag = document.querySelector(FORM_PHONE_FLAG_CSS);
 const countriesListWrap = document.querySelector(`${FORM_PHONE_FLAG_CSS} ul`);
+const PHONE_FLAG_ACTIVE = 'phone-flag-active';
 
 const FORM_FLAG_SPAN_CSS = '.form__flag-span';
 const formFlagSpan = document.querySelector(FORM_FLAG_SPAN_CSS);
@@ -22,9 +23,17 @@ const formSend = document.querySelector(`[name="${FORM_SEND_CSS}"]`);
 
 const FORM_INPUT_ALERT_EMAIL_CSS = '.form__input-alert-email';
 const formInputAlertEmail = document.querySelector(FORM_INPUT_ALERT_EMAIL_CSS);
+const ALERT_EMAIL_ACTIVE = 'form__input-alert-email-active';
 
 const FORM_INPUT_ALERT_PHONE_CSS = '.form__input-alert-phone';
 const formInputAlertPhone = document.querySelector(FORM_INPUT_ALERT_PHONE_CSS);
+const ALERT_PHONE_ACTIVE = 'form__input-alert-phone-active';
+
+const FORM_ERROR = 'form__error';
+
+const THANKS_HTML = 'thanks.html';
+
+const checkEmail = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
 
 const allCountriesArr = {
     'RUS':{'name':'Россия', 'tel_code': '+7', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/160px-Flag_of_Russia.svg.png'},
@@ -39,17 +48,17 @@ const allCountriesArr = {
     'KAZ':{'name':'Қазақстан', 'tel_code': '+7', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/160px-Flag_of_Kazakhstan.svg.png'}
 }
 
-const checkEmail = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
 // Отправка формы
 formSend.onclick = function (event) {
     event.preventDefault();
+    event.stopPropagation();
 
     if (formUserName.value.trim() != '' && formUserEmail.value.trim() != '' && formUserPhone.value.trim() != '') {
         if (checkEmail.test(formUserEmail.value.trim())) {
             sendFormFunc();
         } else{
 
-            formInputAlertEmail.classList.add('form__input-alert-email-active');
+            formInputAlertEmail.classList.add(ALERT_EMAIL_ACTIVE);
         }
     } else {
         alert('Заполните все поля');
@@ -60,22 +69,22 @@ formSend.onclick = function (event) {
 formUserEmail.oninput = () => {
 
     if (!checkEmail.test(formUserEmail.value.trim())) {
-        formUserEmail.classList.add('form__error')
+        formUserEmail.classList.add(FORM_ERROR);
         formUserEmail.value = formUserEmail.value.toLowerCase();
     } else {
-        formUserEmail.classList.remove('form__error');
-        formInputAlertEmail.classList.remove('form__input-alert-email-active');
+        formUserEmail.classList.remove(FORM_ERROR);
+        formInputAlertEmail.classList.remove(ALERT_EMAIL_ACTIVE);
     }
 }
 
 // Проверка ввода номера телефона
 formUserPhone.onkeypress = (event) => {
     if (event.charCode >= 48 && event.charCode <= 57) {
-        formUserPhone.classList.remove('form__error');
-        formInputAlertPhone.classList.remove('form__input-alert-phone-active');
+        formUserPhone.classList.remove(FORM_ERROR);
+        formInputAlertPhone.classList.remove(ALERT_PHONE_ACTIVE);
     } else {
-        formUserPhone.classList.add('form__error');
-        formInputAlertPhone.classList.add('form__input-alert-phone-active');
+        formUserPhone.classList.add(FORM_ERROR);
+        formInputAlertPhone.classList.add(ALERT_PHONE_ACTIVE);
         return false;
     }
 }
@@ -90,7 +99,7 @@ function sendFormFunc () {
         'body': `user_name=${formUserName.value.trim()}&user_email=${formUserEmail.value.trim()}&user_phone=${formUserPhone.value.trim()}`
         
     })
-    .then(function () {window.location.href = 'thanks.html'})
+    .then(function () {window.location.href = THANKS_HTML})
 }
 
 // Заполнение спаска странами
@@ -122,7 +131,7 @@ function selCountryFunk () {
         countriesList[i].onclick = function () {
             formFlagSpan.style.backgroundImage = `url('${this.getAttribute('url-flag')}')`;
             formUserPhone.value = this.getAttribute('data-code');
-            formPhoneFlag.classList.remove('phone-flag-active');
+            formPhoneFlag.classList.remove(PHONE_FLAG_ACTIVE);
         }
     }
 }
@@ -131,10 +140,12 @@ selCountryFunk()
 // Открытие меню стран
 formFlagSpan.onclick = (event) => {
     event.stopPropagation();
-    formPhoneFlag.classList.toggle('phone-flag-active');
+    formPhoneFlag.classList.toggle(PHONE_FLAG_ACTIVE);
 }
 
 // Закрытие меню нажатием в любой части экрана
 document.onclick = function () {
-    if (formPhoneFlag.classList.contains('phone-flag-active')) formPhoneFlag.classList.remove('phone-flag-active');
+    if (formPhoneFlag.classList.contains(PHONE_FLAG_ACTIVE)) formPhoneFlag.classList.remove(PHONE_FLAG_ACTIVE);
+    if (formInputAlertPhone.classList.contains(ALERT_PHONE_ACTIVE)) formInputAlertPhone.classList.remove(ALERT_PHONE_ACTIVE);
+    if (formInputAlertEmail.classList.contains(ALERT_EMAIL_ACTIVE)) formInputAlertEmail.classList.remove(ALERT_EMAIL_ACTIVE);
 }

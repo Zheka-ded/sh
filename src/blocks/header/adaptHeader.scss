@@ -22,3 +22,25 @@
     }
 
 }
+
+@media screen and (max-width: 380px) {
+
+    .header{
+        align-items: center;
+
+        &__logo-link{
+            transform: translate(-50%);
+        }
+
+        &__nav{
+            flex-direction: column;
+            margin-top: 40px;
+        }
+
+        &__nav-link{
+            font-size: 11.5px;
+        }
+
+    }
+
+}

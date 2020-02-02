@@ -19,3 +19,14 @@
     }
 
 }
+
+@media screen and (max-width: 380px) {
+
+    .expand{
+
+        &__title-text{
+            font-size: 15px;
+        }
+    }
+
+}

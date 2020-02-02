@@ -30,6 +30,7 @@
                 top: 356px;
     
                 &::after{
+                    width: 99%;
                     border-right: 3px solid $main-color;
                     border-left: 3px solid $main-color;
                 }
@@ -70,6 +71,20 @@
             }
     
         }
+
+        &__icon-wrap{
+
+            &-three-one{
+                left: 135px;
+                top: 0px;
+            }
+
+            &-four{
+                left: 148px;
+                top: -83px;
+            }
+
+        }
         
     }
 
@@ -91,8 +106,8 @@
             &-step-four{
                 left: 32px;
                 top: 698px;
-                width: 260px;
-                height: 150px;
+                // width: 258px;
+                // height: 150px;
                 border-right: 3px solid $main-color;
                 border-left: 1px solid $our-team-color;
                 
@@ -109,6 +124,55 @@
     
         }
         
+    }
+
+}
+@media screen and (max-width: 410px) {
+
+    .progress{
+    
+        &__hexagon{
+
+            &-step-one{
+                left: 15px;
+                &::before{
+                    border-right: 3px solid $main-color;
+                }
+            }
+
+            &-step-picture{
+                left: -6px;
+                top: 160px;
+            }
+
+            &-step-two{
+                left: -7px;
+                top: 411px;
+                // border-right: 3px solid $main-color;
+                // &::before{
+                //     // border-right: 3px solid $main-color;
+                // }
+            }
+
+            &-step-three{
+                left: 76px;
+                top: 560px;
+                z-index: 2;
+                // border-right: 3px solid $main-color;
+                // &::before{
+                //     // border-right: 3px solid $main-color;
+                // }
+            }
+
+            &-step-four{
+                left: -20px;
+                top: 754px;
+                // border-right: 3px solid $main-color;
+                // &::before{
+                //     border-right: 3px solid $main-color;
+                // }
+            }
+        }
     }
 
 }

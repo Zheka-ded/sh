@@ -10,12 +10,13 @@
     padding-top: 50px;
 
     &__input-wrap{
+        position: relative;
         margin: 10px 15px;
     }
 
-    &__phone-wrap{
-        position: relative;
-    }
+    // &__phone-wrap{
+    //     position: relative;
+    // }
 
     &__phone-flag{
         display: none;
@@ -28,8 +29,6 @@
         overflow-y: scroll;
         border-radius: 5px;
         margin-bottom: 3px;
-        // border-top-left-radius: 5px;
-        // border-top-right-radius: 5px;
         box-shadow: 0px -3px 7px 2px $main-subtitle-color;
         left: 1px;
         ul{
@@ -84,6 +83,7 @@
         color: $our-team-color;
         font-weight: 600;
     }
+
     &__input{
         width: 250px;
         height: 38px;
@@ -93,7 +93,6 @@
         border: 1.5px solid $main-subtitle-color;
         padding: 0 5px;
         transition: 0.3s all ease;
-        // background: $bg-two;
 
         &::placeholder{
             font-size: 13px;
@@ -103,6 +102,46 @@
             outline: none;
             border: 1.5px solid $primary;
             transition: 0.3s all ease;
+        }
+
+        &-alert{
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 65px;
+            width: 99%;
+            height: 38px;
+            // border: 1.5px solid red;
+            border: 1.5px solid #fc635e;
+            box-shadow: 0px 0px 5px 2px #adadad;
+            background: #fff;
+            border-radius: 5px;
+
+            &-email{
+
+                &-text{
+                    color: #fc635e;
+                    text-shadow: 0px 1px 3px #adadad;
+                }
+
+                &-active{
+                    display: flex;
+                }
+            }
+
+            &-phone{
+
+                &-text{
+                    color: #fc635e;
+                    text-shadow: 0px 1px 3px #adadad;
+                }
+
+                &-active{
+                    display: flex;
+                }
+            }
+
         }
 
     }
@@ -115,6 +154,10 @@
         // }
     }
 
+    &__btn-wrap{
+        margin-top: 20px;
+    }
+
 
     &__btn{
         cursor: pointer;
@@ -122,7 +165,7 @@
         width: max-content;
         background: $main-color;
         border-radius: 5px;
-        padding: 9px 11px;
+        padding: 9px 13px;
         border: none;
         color: $red-btn-color;
         font-size: 18px;
@@ -133,4 +176,13 @@
 
 .phone-flag-active{
     display: flex;
+}
+
+.form__error{
+
+    &:focus{
+        outline: none;
+        border: 1.5px solid $main-color;
+        transition: 0.3s all ease;
+    }
 }

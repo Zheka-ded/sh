@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
+    <title>AAT</title>
     <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet"/>
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/main.css"/>
@@ -17,7 +17,7 @@
               <p>A<span class="logo__span">AAT</span></p></a>
             <nav class="header__nav">
               <ul>
-                <li><a class="header__nav-link header__about" href="#" data-text="Получить более детальную информацию">Получить более детальную информацию</a></li>
+                <li><a class="header__nav-link header__about" href="#form" data-text="Получить более детальную информацию">Получить более детальную информацию</a></li>
               </ul>
             </nav>
           </header>
@@ -34,28 +34,24 @@
               <div class="what-can__hexagon-wrap">
                 <div class="what-can__svg-wrap what-can__hexagon"><i class="fas fa-hourglass-start what-can__icon"></i></div>
               </div>
-              <p class="extra-small__title-text what-can__title">adv часы</p>
               <p class="extra-small__subtitle-text what-can__subtitle">Вы тратите минимум своего времени </p>
             </div>
             <div class="what-can__item">
               <div class="what-can__hexagon-wrap">
                 <div class="what-can__svg-wrap what-can__hexagon"><i class="fas fa-percent what-can__icon"></i></div>
               </div>
-              <p class="extra-small__title-text what-can__title">branding %</p>
               <p class="extra-small__subtitle-text what-can__subtitle">Фиксированный минимальный %.</p>
             </div>
             <div class="what-can__item">
               <div class="what-can__hexagon-wrap">
                 <div class="what-can__svg-wrap what-can__hexagon"><i class="fas fa-chart-line what-can__icon"></i></div>
               </div>
-              <p class="extra-small__title-text what-can__title">marketing</p>
               <p class="extra-small__subtitle-text what-can__subtitle">Потоковая обработка данных дает возможность определить точку входа в сделку с минимальной погрешностью. </p>
             </div>
             <div class="what-can__item">
               <div class="what-can__hexagon-wrap">
                 <div class="what-can__svg-wrap what-can__hexagon"><i class="fas fa-sliders-h what-can__icon"></i></div>
               </div>
-              <p class="extra-small__title-text what-can__title">clients</p>
               <p class="extra-small__subtitle-text what-can__subtitle">Настройка ААТ на любой инструмент и рынок.</p>
             </div>
           </div>
@@ -173,27 +169,33 @@
           </div>
         </div>
       </section>
-      <form class="form">
+      <form class="form" id="form">
         <div class="form__input-wrap form__name-wrap">
           <label>Ваше имя
-            <input class="form__input form__name" type="text" name="user_name" placeholder="Ваше имя"/>
+            <input class="form__input form__name" type="text" name="user_name" placeholder="Ваше имя" title="Заполните поле"/>
           </label>
         </div>
         <div class="form__input-wrap form__email-wrap">
+          <div class="form__input-alert form__input-alert-email">
+            <p class="small__subtitle-text form__input-alert-email-text">Заполните корректно поле</p>
+          </div>
           <label>Ваша почта
-            <input class="form__input form__email" type="email" name="user_email" placeholder="Ваш E-mail"/>
+            <input class="form__input form__email" type="email" name="user_email" placeholder="Ваш E-mail" title="Заполните поле"/>
           </label>
         </div>
         <div class="form__input-wrap form__phone-wrap">
           <div class="form__phone-flag">
             <ul></ul>
           </div><span class="form__flag-span"></span>
+          <div class="form__input-alert form__input-alert-phone">
+            <p class="small__subtitle-text form__input-alert-phone-text">Только цифры</p>
+          </div>
           <label>Ваш номер телефона
-            <input class="form__input form__phone" type="text" name="user_phone" placeholder="Ваш номер телефона"/>
+            <input class="form__input form__phone" type="text" name="user_phone" placeholder="Ваш номер телефона" title="Заполните поле"/>
           </label>
         </div>
         <div class="form__btn-wrap">
-          <button class="form__btn" type="submit" name="send_form" value="Зарегестрироваться на курс">Зарегестрироваться на курс</button>
+          <button class="form__btn" type="submit" name="send_form" value="Зарегестрироваться на курс" title="Отправить заявку">Зарегестрироваться на курс</button>
         </div>
       </form>
       <footer class="footer">

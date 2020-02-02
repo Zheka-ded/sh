@@ -27,6 +27,49 @@
         align-items: center;
         margin: 10px;
         padding: 5px;
+        
+        &:hover .what-can__hexagon-wrap{
+            background: $main-color;
+            transform: rotate(60deg);
+            transition: 0.3s all ease;
+        }
+
+        &:hover .what-can__hexagon-wrap::before {
+            background: $main-color;
+            transition: 0.3s all ease;
+        }
+
+        &:hover .what-can__hexagon-wrap::after {
+            background: $main-color;
+            transition: 0.3s all ease;
+        }
+
+        &:hover .what-can__hexagon{
+            background: $white-tetx-color;
+            transform: rotate(-60deg);
+            transition: 0.3s all ease;
+        }
+
+        &:hover .what-can__hexagon::before{
+            background: $white-tetx-color;
+            transition: 0.3s all ease;
+        }
+
+        &:hover .what-can__hexagon::after{
+            background: $white-tetx-color;
+            transition: 0.3s all ease;
+        }
+
+        &:hover .what-can__icon{
+            color: $main-color;
+            transition: 0.3s all ease;
+        }
+
+        &:hover .what-can__subtitle{
+            color: $main-color;
+            text-shadow: 0px 1px 3px $main-subtitle-color;
+            transition: 0.3s all ease;
+        }
     }
 
     &__hexagon-wrap{
@@ -61,42 +104,42 @@
             transition: 0.3s all ease;
         }
 
-        &:hover {
-            background: $main-color;
-            transform: rotate(60deg);
-            transition: 0.3s all ease;
-        }
+        // &:hover {
+        //     background: $main-color;
+        //     transform: rotate(60deg);
+        //     transition: 0.3s all ease;
+        // }
 
-        &:hover::before {
-            background: $main-color;
-            transition: 0.3s all ease;
-        }
+        // &:hover::before {
+        //     background: $main-color;
+        //     transition: 0.3s all ease;
+        // }
 
-        &:hover::after {
-            background: $main-color;
-            transition: 0.3s all ease;
-        }
+        // &:hover::after {
+        //     background: $main-color;
+        //     transition: 0.3s all ease;
+        // }
 
-        &:hover .what-can__hexagon{
-            background: $white-tetx-color;
-            transform: rotate(-60deg);
-            transition: 0.3s all ease;
-        }
+        // &:hover .what-can__hexagon{
+        //     background: $white-tetx-color;
+        //     transform: rotate(-60deg);
+        //     transition: 0.3s all ease;
+        // }
 
-        &:hover .what-can__hexagon::before{
-            background: $white-tetx-color;
-            transition: 0.3s all ease;
-        }
+        // &:hover .what-can__hexagon::before{
+        //     background: $white-tetx-color;
+        //     transition: 0.3s all ease;
+        // }
 
-        &:hover .what-can__hexagon::after{
-            background: $white-tetx-color;
-            transition: 0.3s all ease;
-        }
+        // &:hover .what-can__hexagon::after{
+        //     background: $white-tetx-color;
+        //     transition: 0.3s all ease;
+        // }
 
-        &:hover .what-can__icon{
-            color: $main-color;
-            transition: 0.3s all ease;
-        }
+        // &:hover .what-can__icon{
+        //     color: $main-color;
+        //     transition: 0.3s all ease;
+        // }
         
     }
 
@@ -148,10 +191,27 @@
         z-index: 2;
     }
 
-    &__title{
-        padding-bottom: 11px;
-        margin-bottom: 21px;    
+    &__subtitle{
+        transition: 0.3s all ease;
+        position: relative;
+        margin-top: 20px;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 101px;
+            height: 1px;
+            background: $main-text-color;
+            right: 50%;
+            transform: translate(50%, -20px);
+            // margin-bottom: 20px;
+        }
     }
+
+    // &__title{
+    //     padding-bottom: 11px;
+    //     margin-bottom: 21px;    
+    // }
 
     &__arrow-down{
         margin-top: 51px;

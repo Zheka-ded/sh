@@ -118,6 +118,13 @@
             transition: 0.3s all ease;
         }
 
+        
+        &:hover .progress__hexagon-subtitle{
+            color: $main-color;
+            text-shadow: 0px 1px 3px $main-subtitle-color;
+            transition: 0.3s all ease;
+        }
+
         &__title-wrap{
             margin: 0px auto 10px;
             padding: 0px 0px 5px 0px;

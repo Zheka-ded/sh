@@ -20,6 +20,12 @@ const formUserPhone = document.querySelector(`[name="${FORM_USER_PHONE_CSS}"]`);
 const FORM_SEND_CSS = 'send_form';
 const formSend = document.querySelector(`[name="${FORM_SEND_CSS}"]`);
 
+const FORM_INPUT_ALERT_EMAIL_CSS = '.form__input-alert-email';
+const formInputAlertEmail = document.querySelector(FORM_INPUT_ALERT_EMAIL_CSS);
+
+const FORM_INPUT_ALERT_PHONE_CSS = '.form__input-alert-phone';
+const formInputAlertPhone = document.querySelector(FORM_INPUT_ALERT_PHONE_CSS);
+
 const allCountriesArr = {
     'RUS':{'name':'Россия', 'tel_code': '+7', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/160px-Flag_of_Russia.svg.png'},
     'LAT':{'name':'Latvija', 'tel_code': '+371', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Latvia.svg/160px-Flag_of_Latvia.svg.png'},
@@ -33,20 +39,44 @@ const allCountriesArr = {
     'KAZ':{'name':'Қазақстан', 'tel_code': '+7', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/160px-Flag_of_Kazakhstan.svg.png'}
 }
 
-
+const checkEmail = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
+// Отправка формы
 formSend.onclick = function (event) {
     event.preventDefault();
 
-    let checkEmail = /^[\w\.\d-_]+@[\w\.\d-_]+\.\w{2,4}$/i;
-    
     if (formUserName.value.trim() != '' && formUserEmail.value.trim() != '' && formUserPhone.value.trim() != '') {
         if (checkEmail.test(formUserEmail.value.trim())) {
-            sendFormFunc()
+            sendFormFunc();
         } else{
-            alert('Веден не верный адрес почты');
+
+            formInputAlertEmail.classList.add('form__input-alert-email-active');
         }
     } else {
         alert('Заполните все поля');
+    }
+}
+
+// Проверка ввода в инпут почты
+formUserEmail.oninput = () => {
+
+    if (!checkEmail.test(formUserEmail.value.trim())) {
+        formUserEmail.classList.add('form__error')
+        formUserEmail.value = formUserEmail.value.toLowerCase();
+    } else {
+        formUserEmail.classList.remove('form__error');
+        formInputAlertEmail.classList.remove('form__input-alert-email-active');
+    }
+}
+
+// Проверка ввода номера телефона
+formUserPhone.onkeypress = (event) => {
+    if (event.charCode >= 48 && event.charCode <= 57) {
+        formUserPhone.classList.remove('form__error');
+        formInputAlertPhone.classList.remove('form__input-alert-phone-active');
+    } else {
+        formUserPhone.classList.add('form__error');
+        formInputAlertPhone.classList.add('form__input-alert-phone-active');
+        return false;
     }
 }
 
@@ -101,7 +131,7 @@ selCountryFunk()
 // Открытие меню стран
 formFlagSpan.onclick = (event) => {
     event.stopPropagation();
-    formPhoneFlag.classList.add('phone-flag-active');
+    formPhoneFlag.classList.toggle('phone-flag-active');
 }
 
 // Закрытие меню нажатием в любой части экрана

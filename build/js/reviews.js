@@ -1,9 +1,9 @@
 // Happy users array
 let userArr = [
-    {'name': ['Alan', 'Richman'], 'photo': 'user_1.png', 'description': 'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis '},
-    {'name': ['Tomothy', 'Bowman'], 'photo': 'user_2.png', 'description': 'Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat se'},
-    {'name': ['Steve', 'Tracy'], 'photo': 'user_3.png', 'description': 'Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.'},
-    {'name': ['Hellen', 'Johns'], 'photo': 'user_4.png', 'description': 'Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.'}
+    // {'name': ['Alan', 'Richman'], 'photo': 'user_1.png', 'description': 'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis '},
+    {'name': ['Hans ', 'Kand'], 'photo': 'user_2.png', 'description': 'ААТ – это что-то!!! <br> Долго искал помощи в трейдинге, но зачастую никакой помощи не было, только пустые разговоры. <br> А тут, я получил ответы на все свои вопросы и помощника, который действительно помогает и делает результат.'},
+    {'name': ['Пелевин', 'Олег'], 'photo': 'user_3.png', 'description': 'Имею большой опыт в торговле. Работал по разным стратегиям и с разными компаниями. <br> Прошёл все – начиная от скальпинга и заканчивая фондовым рынком.<br> С ААТ столкнулся впервые.<br> Скажу, как есть – это что-то новое, результатом более чем доволен.'},
+    {'name': ['Larisa', 'Pluscevska'], 'photo': 'user_4.png', 'description': 'Имею небольшой опыт в торговле, точнее если сказать по правде то почти никакого. <br> Муж был всегда против чтобы я занималась торговлей, так как не был уверен в моих знаниях и силах. <br> С ААТ я смогла доказать себе и мужу, что торговля - это источник дохода и имея даже минимальные знания можно иметь стабильный доход.'}
 ];
 const arrows = document.querySelectorAll('.reviews__arrow');
 const PUSH_ARROW = 'push';
@@ -35,7 +35,7 @@ function reviewStart () {
     span.textContent = userArr[0].name[1]
     userName.textContent = `${userArr[0].name[0]} `;
     userName.append(span);
-    reviewsDescription.textContent = userArr[0].description;
+    reviewsDescription.innerHTML = userArr[0].description;
     userPhoto.setAttribute('src', `./img/${userArr[0].photo}`);
     userPhoto.setAttribute('alt', `photo_${userArr[0].name}`);
 };
@@ -61,7 +61,7 @@ function nextReview () {
     span.textContent = userArr[step].name[1]
     userName.textContent = `${userArr[step].name[0]} `;
     userName.append(span);
-    reviewsDescription.textContent = userArr[step].description;
+    reviewsDescription.innerHTML = userArr[step].description;
     userPhoto.setAttribute('src', `./img/${userArr[step].photo}`);
     userPhoto.setAttribute('alt', `photo_${userArr[step].name}`);
 }
@@ -73,7 +73,7 @@ function prevReview () {
     span.textContent = userArr[step].name[1]
     userName.textContent = `${userArr[step].name[0]} `;
     userName.append(span);
-    reviewsDescription.textContent = userArr[step].description;
+    reviewsDescription.innerHTML = userArr[step].description;
     userPhoto.setAttribute('src', `./img/${userArr[step].photo}`);
     userPhoto.setAttribute('alt', `photo_${userArr[step].name}`);
 }

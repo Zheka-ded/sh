@@ -16,7 +16,7 @@
 
     &__title-wrap{
         margin-top: 60px;
-
+        // width: 90%;
     }
 
     &__title{
@@ -36,7 +36,8 @@
         &::before{
             content: '';
             position: absolute;
-            background: url('https://cdn2.iconfinder.com/data/icons/despicable-me-2-minions/128/Evil-Minion-Icon-3.png');
+            background: url('../img/data.jpg');
+            // background: url('https://cdn2.iconfinder.com/data/icons/despicable-me-2-minions/128/Evil-Minion-Icon-3.png');
             background-color: $white-tetx-color;
             // background-repeat: no-repeat;
             background-size: contain;
@@ -57,7 +58,8 @@
         &::before{
             content: '';
             position: absolute;
-            background: url('https://cdn2.iconfinder.com/data/icons/despicable-me-2-minions/128/evil-minion-icon.png');
+            // background: url('https://cdn2.iconfinder.com/data/icons/despicable-me-2-minions/128/evil-minion-icon.png');
+            background: url('../img/data.jpg');
             background-color: $white-tetx-color;
             // background-repeat: no-repeat;
             background-size: contain;
@@ -77,10 +79,11 @@
         &::before{
             content: '';
             position: absolute;
-            background: url('https://cdn2.iconfinder.com/data/icons/despicable-me-2-minions/128/Evil-Minion-Icon-4.png');
+            // background: url('https://cdn2.iconfinder.com/data/icons/despicable-me-2-minions/128/Evil-Minion-Icon-4.png');
+            background: url('../img/data.jpg');
             background-color: $white-tetx-color;
             // background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             background-position: center;
             right: 9.5px;
             top: 17px;

@@ -1,0 +1,16 @@
+
+
+
+@media screen and (max-width: 638px) {
+
+    .footer{
+        &__wrap{
+            flex-direction: column;
+        }
+    }
+
+    .copyright__wrap{
+        margin-top: 80px;
+    }
+
+}

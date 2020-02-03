@@ -14,17 +14,20 @@
 
     
     &__hexagon-wrap{
-        width: 101px;
+        width: 100px;
         height: 58px;
         background: $hexagon-wrap-color;
         position: relative;
+        // position: absolute;
         z-index: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // margin: auto;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
         margin-top: 50px;
         margin-bottom: 90px;
         transition: 0.3s all ease;
+        // display: none;
 
         &:before {
             content: "";
@@ -34,6 +37,7 @@
             transform: rotate(60deg);
             background: $hexagon-wrap-color;
             transition: 0.3s all ease;
+            
         }
         &:after {
             content: "";
@@ -43,6 +47,7 @@
             transform: rotate(-60deg);
             background: $hexagon-wrap-color;
             transition: 0.3s all ease;
+            
         }
 
     }
@@ -52,7 +57,10 @@
         width: 90px;
         height: 52px;
         background: $main-color;
-        position: relative;
+        // position: relative;
+        position: absolute;
+        left: 5px;
+        top: 3px;
         z-index: 1;
         transition: 0.3s all ease;
 

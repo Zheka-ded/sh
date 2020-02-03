@@ -303,7 +303,7 @@
         width: 100%;
         transform: translateY(-50.5%);
         opacity: 0.5;
-        top: 50%;
+        top: 51%;
         z-index: 1;
         // height: 100%;
     }
@@ -315,7 +315,7 @@
     height: 153px;
 
     &::before, &::after{
-        height: 99%;
+        height: 99.5%;
     }
 }
 

@@ -13,17 +13,11 @@ $primary: #24db89;
 
 // Основные стили
 .body{
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     width: 100%;
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Muli', sans-serif;
     font-family: 'Roboto', sans-serif;
-    // font-family: 'Expletus Sans', cursive;
-    // font-family: 'Merriweather Sans', sans-serif;
     background: url('../img/bg.png');
-    // background-size: cover;
 }
 
 .body__wrap{
@@ -133,62 +127,18 @@ $primary: #24db89;
     letter-spacing: -0.7px;
 }
 
-.btn__wrap{
-    display: flex;
-    width: max-content;
-    margin: 0 auto;
-    position: relative;
-    border: 2px solid $main-color;
-    border-radius: 10px;
-    
-}
-
-.btn__g{
-    background: transparent;
-    border: none;
-    color: $main-color;
-    padding: 10px 30px;
-    font-family: $main-fonts;
-    font-size: 24px;
-    font-weight: 300;
-}
-
-// .arrow__down{
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     margin: 0 auto;
-//     width: 28px;
-//     height: 28px;
-//     border-radius: 50%;
-//     position: relative;
-//     cursor: pointer;
-// }
-
-// .red__arrow{
-//     background: $main-color;
-//     color: $white-tetx-color;
-// }
-// .white__arrow{
-//     background: $white-tetx-color;
-//     border: 1px solid $main-color;
-//     color: $main-color;
-// }
 
 .two-part{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    // align-items: center;
     width: 100%;
 }
 
 .left-part{
     display: flex;
     flex-direction: column;
-    // width: 45%;
     width: 380px;
     margin: 15px;
 
@@ -210,57 +160,16 @@ $primary: #24db89;
         line-height: 24px;
     }
 
-    &__btn-wrap{
-        display: flex;
-        width: max-content;
-        background: $main-color;
-        border-radius: 5px;
-        padding: 10px 18px;
-        margin-top: 39px;
-        // &-reverse{
-        //     margin-right: ;
-        // }
-    }
-
-    &__btn{
-        border: none;
-        background: none;
-        color: $red-btn-color;
-        font-size: 20px;
-        font-family: $main-fonts;
-    }
-
-    &__reverse{
-        align-items: flex-end;
-    }
-
 }
 
-
-.reverse{
-    flex-direction: row-reverse;
-}
-
-.left-part__title-reverse{
-    text-align: right;
-    padding-right: 12px;
-    border-left: none;
-    border-right: 10px solid $main-color;
-}
-
-.left-part__subtitle-reverse{
-    text-align: right;
-}
 
 .right-part{
     display: flex;
-    // width: 55%;
-    // width: 500px;
     margin: 15px;
-    // flex-direction: row;
-    // justify-content: flex-end;
-    // height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6{
+    display: none;
+}
 
 @import './adaptGlobal.scss';

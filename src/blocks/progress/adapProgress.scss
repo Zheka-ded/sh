@@ -4,7 +4,6 @@
 
         &__hexagons-wrap{
             height: 1000px;
-            // transform: translateX(20px);
         }
     
         &__hexagon{
@@ -59,7 +58,6 @@
                 border-right: 1px solid $our-team-color;
                 
                 &::before{
-                    // border-left: 1px solid $our-team-color;
                     border-right: 1px solid $our-team-color;
                 }
     
@@ -106,8 +104,6 @@
             &-step-four{
                 left: 32px;
                 top: 698px;
-                // width: 258px;
-                // height: 150px;
                 border-right: 3px solid $main-color;
                 border-left: 1px solid $our-team-color;
                 
@@ -148,29 +144,17 @@
             &-step-two{
                 left: -7px;
                 top: 411px;
-                // border-right: 3px solid $main-color;
-                // &::before{
-                //     // border-right: 3px solid $main-color;
-                // }
             }
 
             &-step-three{
                 left: 76px;
                 top: 560px;
                 z-index: 2;
-                // border-right: 3px solid $main-color;
-                // &::before{
-                //     // border-right: 3px solid $main-color;
-                // }
             }
 
             &-step-four{
                 left: -20px;
                 top: 754px;
-                // border-right: 3px solid $main-color;
-                // &::before{
-                //     border-right: 3px solid $main-color;
-                // }
             }
         }
     }

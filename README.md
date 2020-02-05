@@ -33,6 +33,3 @@ npm i gulp-imagemin --save-dev
 npm i gulp-plumber --save-dev
 
 #######################################################
-
-1) class Header
-отрисовка header по умолчанию в тег header c классом header

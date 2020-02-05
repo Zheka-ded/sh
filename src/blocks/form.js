@@ -44,7 +44,6 @@ const allCountriesArr = {
     'ITA':{'name':'Italia', 'tel_code': '+39', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/160px-Flag_of_Italy.svg.png'},
     'ESP':{'name':'España', 'tel_code': '+34', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/160px-Flag_of_Spain.svg.png'},
     'BLR':{'name':'Беларусь', 'tel_code': '+375', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/160px-Flag_of_Belarus.svg.png'},
-    // 'UKR':{'name':'Україна', 'tel_code': '+380', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/160px-Flag_of_Ukraine.svg.png'},
     'KAZ':{'name':'Қазақстан', 'tel_code': '+7', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/160px-Flag_of_Kazakhstan.svg.png'}
 }
 

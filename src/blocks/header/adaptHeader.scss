@@ -1,9 +1,15 @@
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 731px) {
 
-    
+    .header__logo-link{
+        margin-bottom: 30px;
+
+    }
+
+    .header__nav{
+        margin: 0 auto;
+    }
 
 }
-
 
 @media screen and (max-width: 638px) {
 
@@ -42,11 +48,5 @@
         }
 
     }
-
-    // .hexagon{
-    //     &::before{
-    //         left: 50px;
-    //     }
-    // }
 
 }

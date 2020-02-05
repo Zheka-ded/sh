@@ -17,6 +17,7 @@
         align-items: center;
         text-decoration: none;
         font-family: $main-fonts;
+        margin-right: 80px;
         p{
             z-index: 1;
         }
@@ -29,41 +30,20 @@
 	height: 34px;
 	background: $main-color;
     position: relative;
-    // position: absolute;
-    // z-index: 0;
 }
 
-.hexagon:before {
+.hexagon:before, .hexagon:after{
 	content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    transform: rotate(60deg);
     background: $main-color;
-    // z-index: 0;
-	// top: -15px; 
-	// left: 0;
-	// width: 0;
-	// height: 0;
-	// border-left: 30px solid transparent;
-	// border-right: 30px solid transparent;
-	// border-bottom: 15px solid $main-color;
+}
+.hexagon::before {
+    transform: rotate(60deg);
 }
 .hexagon:after {
-	content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
     transform: rotate(-60deg);
-    background: $main-color;
-    // z-index: 0;
-	// bottom: -15px; 
-	// left: 0;
-	// width: 0;
-	// height: 0;
-	// border-left: 30px solid transparent;
-	// border-right: 30px solid transparent;
-	// border-top: 15px solid $main-color;
 }
 
 
@@ -84,49 +64,23 @@
     display: flex;
     align-items: center;
 
-    ul{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
     &-link{
         text-decoration: none;
-        margin: 5px 10px;
+        padding: 8px 15px;
+        border: 1.5px solid $main-color;
         text-transform: uppercase;
+        border-radius: 5px;
         color: #fff;
+        transition: 0.3s all ease;
 
-        &:last-child{
-            margin-right: 0px;
+        &:hover{
+            color: $main-color;
+            border-color: #fff;
+            transition: 0.3s all ease;
         }
+        
     }
 
-}
-
-
-.header__nav ul li a{
-    position: relative;
-    text-decoration: none;
-    font-family: $main-fonts;
-}
-
-.header__nav ul li a:hover::before{
-    width: 100%;
-}
-
-.header__nav ul li a::before{
-    content: attr(data-text);
-    border-bottom: 3px solid $main-color;
-    color: #fff;
-    white-space: nowrap;
-    width: 0%;
-    overflow: hidden;
-    transition: 0.4s;
-    position: absolute;
-    padding: 6px 0px;
-    left: 0;
-    top: -4.5px;
 }
 
 @import './adaptHeader.scss';

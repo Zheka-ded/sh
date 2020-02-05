@@ -90,7 +90,6 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            // transform: rotate(60deg);
             background: $hexagon-wrap-color;
             transition: 0.3s all ease;
         }
@@ -98,51 +97,8 @@
             transform: rotate(60deg);
         }
         &:after {
-            // content: "";
-            // position: absolute;
-            // width: 100%;
-            // height: 100%;
             transform: rotate(-60deg);
-            // background: $hexagon-wrap-color;
-            // transition: 0.3s all ease;
         }
-
-        // &:hover {
-        //     background: $main-color;
-        //     transform: rotate(60deg);
-        //     transition: 0.3s all ease;
-        // }
-
-        // &:hover::before {
-        //     background: $main-color;
-        //     transition: 0.3s all ease;
-        // }
-
-        // &:hover::after {
-        //     background: $main-color;
-        //     transition: 0.3s all ease;
-        // }
-
-        // &:hover .what-can__hexagon{
-        //     background: $white-tetx-color;
-        //     transform: rotate(-60deg);
-        //     transition: 0.3s all ease;
-        // }
-
-        // &:hover .what-can__hexagon::before{
-        //     background: $white-tetx-color;
-        //     transition: 0.3s all ease;
-        // }
-
-        // &:hover .what-can__hexagon::after{
-        //     background: $white-tetx-color;
-        //     transition: 0.3s all ease;
-        // }
-
-        // &:hover .what-can__icon{
-        //     color: $main-color;
-        //     transition: 0.3s all ease;
-        // }
         
     }
 
@@ -152,39 +108,31 @@
         background: $main-color;
         position: relative;
         z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         transition: 0.3s all ease;
 
-        &:before {
+        &:before, &::after{
             content: "";
             position: absolute;
             width: 100%;
             height: 100%;
-            transform: rotate(60deg);
             background: $main-color;
             z-index: 1;
             transition: 0.3s all ease;
         }
+        &::before{
+            transform: rotate(60deg);
+        }
         &:after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
             transform: rotate(-60deg);
-            background: $main-color;
-            z-index: 1;
-            transition: 0.3s all ease;
         }
     }
 
     &__title-wrap{
         width: 100%;
         margin-top: 65px;
-    }
-
-    &__svg-wrap{
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     &__icon{
@@ -207,18 +155,7 @@
             background: $main-text-color;
             right: 50%;
             transform: translate(50%, -20px);
-            // margin-bottom: 20px;
         }
-    }
-
-    // &__title{
-    //     padding-bottom: 11px;
-    //     margin-bottom: 21px;    
-    // }
-
-    &__arrow-down{
-        margin-top: 51px;
-        margin-bottom: 15px;
     }
 
 }

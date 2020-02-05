@@ -1,6 +1,5 @@
 // Happy users array
 let userArr = [
-    // {'name': ['Alan', 'Richman'], 'photo': 'user_1.png', 'description': 'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis '},
     {'name': ['Hans ', 'Kand'], 'photo': 'user_2.png', 'description': 'ААТ – это что-то!!! <br> Долго искал помощи в трейдинге, но зачастую никакой помощи не было, только пустые разговоры. <br> А тут, я получил ответы на все свои вопросы и помощника, который действительно помогает и делает результат.'},
     {'name': ['Пелевин', 'Олег'], 'photo': 'user_3.png', 'description': 'Имею большой опыт в торговле. Работал по разным стратегиям и с разными компаниями. <br> Прошёл все – начиная от скальпинга и заканчивая фондовым рынком.<br> С ААТ столкнулся впервые.<br> Скажу, как есть – это что-то новое, результатом более чем доволен.'},
     {'name': ['Larisa', 'Pluscevska'], 'photo': 'user_4.png', 'description': 'Имею небольшой опыт в торговле, точнее если сказать по правде то почти никакого. <br> Муж был всегда против чтобы я занималась торговлей, так как не был уверен в моих знаниях и силах. <br> С ААТ я смогла доказать себе и мужу, что торговля - это источник дохода и имея даже минимальные знания можно иметь стабильный доход.'}
@@ -53,7 +52,6 @@ arrowColor();
 
 rightArrow.onclick = nextReview;
 userPhotoWrap.onclick = nextReview;
-// userPhotoWrap.ontouchstart = nextReview;
 
 function nextReview () {
     step += 1;

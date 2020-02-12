@@ -456,7 +456,7 @@ h1, h2, h3, h4, h5, h6 {
       -webkit-transition: 0.3s all ease;
       transition: 0.3s all ease; }
 
-@media screen and (max-width: 731px) {
+@media screen and (max-width: 736px) {
   .header__logo-link {
     margin-bottom: 30px; }
   .header__nav {

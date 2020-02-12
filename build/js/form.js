@@ -44,7 +44,11 @@ const allCountriesArr = {
     'ITA':{'name':'Italia', 'tel_code': '+39', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/160px-Flag_of_Italy.svg.png'},
     'ESP':{'name':'España', 'tel_code': '+34', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/160px-Flag_of_Spain.svg.png'},
     'BLR':{'name':'Беларусь', 'tel_code': '+375', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Belarus.svg/160px-Flag_of_Belarus.svg.png'},
-    'KAZ':{'name':'Қазақстан', 'tel_code': '+7', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/160px-Flag_of_Kazakhstan.svg.png'}
+    'KAZ':{'name':'Қазақстан', 'tel_code': '+7', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/160px-Flag_of_Kazakhstan.svg.png'},
+    'POL':{'name':'Polska', 'tel_code': '+48', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/160px-Flag_of_Poland.svg.png'},
+    'CZE':{'name':'Česko', 'tel_code': '+420', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/160px-Flag_of_the_Czech_Republic.svg.png'},
+    'SVK':{'name':'Slovensko', 'tel_code': '+421', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/160px-Flag_of_Slovakia.svg.png'},
+    'AUT':{'name':'Österreich', 'tel_code': '+43', 'url_flag':'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/160px-Flag_of_Austria.svg.png'}
 }
 
 // Отправка формы

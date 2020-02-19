@@ -66,16 +66,25 @@
 
     &-link{
         text-decoration: none;
-        padding: 8px 15px;
-        border: 1.5px solid $main-color;
         text-transform: uppercase;
         border-radius: 5px;
-        color: #fff;
+        cursor: pointer;
+        display: flex;
+        width: max-content;
+        background: $main-color;
+        padding: 8px 20px;
+        border: 1.5px solid $main-color;
+        color: $red-btn-color;
+        font-size: 18px;
+        font-family: "Muli", sans-serif;
         transition: 0.3s all ease;
 
         &:hover{
-            color: $main-color;
             border-color: #fff;
+            transition: 0.3s all ease;
+            color: $main-color;
+            border: 1.5px solid $main-color;
+            background: transparent;
             transition: 0.3s all ease;
         }
         

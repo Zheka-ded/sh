@@ -24,6 +24,9 @@
     }
 
     &__border{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         border: 8px solid rgba(255,255,255, 0.3);
         padding-top: 80px;
         padding-bottom: 50px;
@@ -36,12 +39,11 @@
     }
 
     &__btn-wrap{
-        margin-top: 51px;
-    }
-
-    &__arrow-down{
-        margin-top: 53px;
-        margin-bottom: 30px;
+        margin: 70px 10px 40px 10px;
+        max-width: max-content;
+        // width: 100%;
+        // margin-top: 70px;
+        // margin-bottom: 40px;
     }
 
     &__title-text{
@@ -55,6 +57,28 @@
         margin: 30px 60px;
         line-height: 1.6;
     }
+    
+    
+
+    &__nav-link{
+        display: flex;
+        text-align: center;
+        text-decoration: none;
+        padding: 8px 15px;
+        border: 1.5px solid $main-color;
+        text-transform: uppercase;
+        border-radius: 5px;
+        color: #fff;
+        transition: 0.3s all ease;
+        line-height: 1.3;
+        &:hover{
+            color: $main-color;
+            border-color: #fff;
+            transition: 0.3s all ease;
+        }
+        
+    }
+    
 }
 
 @import './adaptExpand.scss';

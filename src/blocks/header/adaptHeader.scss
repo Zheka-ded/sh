@@ -1,13 +1,13 @@
 @media screen and (max-width: 736px) {
 
-    .header__logo-link{
-        margin-bottom: 30px;
+    // .header__logo-link{
+    //     margin-bottom: 30px;
 
-    }
+    // }
 
-    .header__nav{
-        margin: 0 auto;
-    }
+    // .header__nav{
+    //     margin: 0 auto;
+    // }
 
 }
 
@@ -22,7 +22,8 @@
         }
 
         &__nav-link{
-            font-size: 14px;
+            // font-size: 14px;
+            letter-spacing: -1.3px;
         }
 
     }
@@ -43,9 +44,9 @@
             margin-top: 40px;
         }
 
-        &__nav-link{
-            font-size: 11.5px;
-        }
+        // &__nav-link{
+        //     font-size: 11.5px;
+        // }
 
     }
 
